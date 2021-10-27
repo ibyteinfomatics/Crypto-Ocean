@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --site--font: 'Poppins', sans-serif;
+
+    --site--bg: radial-gradient(50% 50% at 50% 50%, #1D2454 0%, #0B0E27 100%);
+    --bg--dark: #0b0e27;
+    --bg--color--purple: #343484;
+    --bg--grey: rgba(185, 250, 245, 0.2);
+    --bg--lightblue: #b9faf9;
+
+    --text--color--lightBlue: #b9faf5;
+    --text--color--pink: #C9B1F5;
+    --text--color--grey: rgba(185, 250, 245, 0.2);
+
+    --button--border: 0.6px solid var(--text--color--lightBlue);
+
+    --box--shadow--big: 0px 0px 30px rgba(185, 250, 245, 0.25);
+    --box--shadow: 0px 4px 10px rgba(185, 250, 245, 0.1);
+
+    --text--shadow: 0px 10px 60px rgba(255, 255, 255, 0.4);
+
+    --border--color--lighblue: var(--text--color--lightBlue);
+}
+.bg--grey{
+    background: var(--bg--grey);
+}
+.bg--color--purple{
+    background: var(--bg--color--purple);
+}
+.bg--dark{
+    background: var(--bg--dark);
+}
+.bg--lightblue{
+    background: var(--bg--lightblue);
+}
+.site--bg{
+    background: var(--site--bg);
+}
+
+.text--color--grey{
+    color: var(--text--color--grey);
+}
+.text--color--pink{
+    color: var(--text--color--pink);
+}
+.text--color--lightblue{
+    color: var(--text--color--lightBlue);
+}
+
+.border-lightblue{
+    border-color: var(--border--color--lightblue);
+}
+
+.site--font{
+    font-family: var(--site--font);
+}
+
+body{
+    @apply text-white site--bg site--font;
+}
+p:empty{
+    @apply hidden;
+}
+.page--wrapper{
+    max-width: 90rem;
+    @apply mx-auto;
+}
+.title {
+    text-shadow: var(--text--shadow);
+    @apply font-black text--color--pink;
+    font-size: 2.875rem;
+}
+h3.title + p{
+    text-shadow: var(--text--shadow);
+}
+.wrapper{
+    @apply mx-auto;
+    max-width: 57.5625rem;
+}
+
+/* Navigation styling */
+div#site__header {
+    @apply fixed mx-auto inset-x-0;
+    max-width: 90rem;
+}
+.site__navigation li{
+    @apply mx-4;
+}
+.site__navigation li a{
+    @apply text-lg;
+}
+
+/* Banner styling */
+div#site__banner {
+    @apply h-screen items-center flex;
+}
+.banner--dots-bg {
+    @apply absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+}
+.banner--dots-bg img{
+    @apply mx-auto;
+}
+.banner-slider-images {
+  position: absolute;
+  top: -6rem;
+  right: 5rem;
+  width: 28rem;
+}
+.banner--waves {
+  position: absolute;
+  width: 100%;
+  height: 23rem;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  right: 0;
+}
+.banner--waves img{
+  position: absolute;
+  width: 100%;
+}
+img.banner-wave-1 {
+  top: -11.5rem;
+}
+img.banner-wave-2 {
+  top: -6rem;
+}
+img.banner-wave-3 {
+  top: -4.5rem;
+}
+img.banner-wave-4 {
+  top: 3rem;
+  z-index: 99999;
+}
+.banner--wrapper{
+    max-width: 61.5rem;
+    @apply mx-auto w-full;
+}
+.banner--content{
+    max-width: 45.0625rem;
+}
+h3.banner--title {
+    @apply text-6xl font-semibold text--color--lightblue;
+    text-shadow: 0px 10px 60px rgba(255, 255, 255, 0.4);
+}
+p.banner--text {
+    @apply mt-6 text-xl text--color--lightblue;
+    max-width: 35rem;
+    text-shadow: var(--text--shadow);
+}
+.banner--btn {
+    @apply mt-12;
+}
+.banner--btn a {
+    border: var(--button--border);
+    box-shadow: var(--button--shadow);
+    @apply box-border rounded-xl py-2.5 px-6 bg--color--purple;
+}
+/* div#site__banner:before {content: '';position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: url(/static/media/banner-dots.0f86bb4a.png) no-repeat center;} */
+
+/* Media styling */
+.media--wrapper {
+    @apply h-screen items-center flex;
+}
+.media--item {
+    @apply mr-12 w-full;
+    max-width: 23.25rem;
+}
+.section--alignment-right .media--wrapper {
+    @apply flex-row-reverse;
+}
+.section--alignment-right .media--item {
+    @apply mr-0 ml-16;
+}
+.media--text{
+    @apply mt-4; 
+}
+.media--text .media--highlight{
+    @apply text--color--lightblue;
+}
+.media--text p:not(:first-child){
+    @apply mt-4;
+}
+
+/* Mint Bos styling */
+.wrapper.box--wrapper {
+    @apply relative rounded-xl border-white border-solid;
+    padding: 3.25rem 3.25rem 10rem;
+    border-width: 0.0625rem;
+}
+.countdown-time {
+    margin-top: -6.75rem;
+    position: relative;
+    z-index: 9999;
+}
+.countdown-time ul {
+    @apply flex max-w-max rounded-xl mx-auto px-4 bg--dark;
+    border: 0.0625rem solid var(--text--color--lightBlue);
+    box-shadow: var(--box--shadow);
+}
+.countdown-time ul span {
+    @apply block text--color--lightblue;
+}
+.countdown-time ul li {
+    @apply mx-3 my-4 relative text-center pr-6 text-base leading-none;
+}
+.countdown-time ul li:last-child{
+    @apply pr-0;
+}
+.countdown-time ul li:not(:last-child):before {
+    content: ':';
+    @apply absolute right-0 bottom-0 text--color--grey;
+    font-size: 2rem;
+}
+.countdown-time ul span + span {
+    font-size: 2rem;
+    @apply text-white mt-2.5 font-bold;
+}
+.block-content-box {
+    background: var(--bg--grey);
+    border-width: 0.125rem;
+    @apply p-14 w-full ml-20 border-solid border-lightblue rounded-xl bg--grey;
+}
+.mintbox--wrapper .box-content{
+    @apply mt-8;
+}
+.box-content > p{
+    max-width: 95%;
+    text-shadow: var(--text--shadow);
+    @apply mx-auto mt-6;
+}
+.mint--block {
+    @apply flex items-center mt-12;
+}
+.block--img {
+    max-width: 19rem;
+}
+.box-highlight{
+    text-shadow: var(--text--shadow);
+}
+.box-subtitle{
+    font-size: 2.1875rem;
+    text-shadow: var(--text--shadow);
+    @apply font-black;
+}
+.result {
+    @apply max-w-max px-3.5 font-black mt-4 mb-3 mx-auto;
+    background: rgb(34 34 34 / 30%);
+    padding-top: 0.43755rem;
+    padding-bottom: 0.4375rem;
+}
+.btn a{
+    @apply inline-block;
+}
+.tune--button{
+    @apply absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+/* Sailmap Wrapper */
+.wrapper.sailmap--wrapper{
+    @apply pt-20 px-20 pb-10;
+}
+.sailmap--wrapper h2{
+    @apply text--color--lightblue;
+}
+.sailmap--list {
+    @apply mt-5;
+}
+.sailmap--list > ul > li {
+    @apply border-solid border-lightblue mb-5 py-5 px-10 flex rounded-xl bg--grey delay-300 cursor-pointer; 
+    border-width: 0.125rem;
+}
+.sailmap--list > ul > li:hover{
+    background-color: rgba(201, 177, 245, 0.2);
+}
+.list--date span {
+    @apply block;
+}
+.list--date {
+    @apply pr-10 mr-10 text-center relative;
+}
+span.list--year {
+    @apply font-medium mt-1;
+}
+span.list--month {
+    @apply text-2xl font-black;
+}
+.list--date:after {
+    content: '';
+    @apply w-0.5 bg--lightblue h-12 absolute right-0 top-1/2 transform -translate-y-1/2;
+}
+.listing--data li:not(:first-child) {
+    @apply mt-3;
+}
+.listing--data ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+.discord--button {
+    @apply text-center mt-12;
+}
+.discord--button a{
+    @apply bg--color--purple py-2.5 px-6 font-medium text--color--lightblue;
+    border-radius: 0.75rem;
+    border: var(--button--border);
+    box-shadow: 0px 0px 30px rgb(185 250 245 / 25%);
+}
+
+/* Faqs Styling */
+.faqs--wrapper.wrapper{
+    @apply px-20;
+}
+.faqs--content .title{
+    @apply text--color--lightblue mb-5 pr-12 relative;
+}
+.faqs--content .title img{
+    @apply w-12 absolute right-0 -top-2;
+}
