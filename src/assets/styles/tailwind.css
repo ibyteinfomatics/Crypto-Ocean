@@ -72,7 +72,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    @apply text-white site--bg site--font;
+    @apply text-white site--font;
+    background: radial-gradient(50% 50% at 50% 50%, #1D2454 0%, #0B0E27 100%);
 }
 p:empty{
     @apply hidden;
@@ -401,7 +402,7 @@ div#site--footer {
     @apply relative;
 }
 .footer--bg {
-    @apply absolute left-0 right-0 overflow-y-hidden;
+    @apply absolute left-0 right-0 overflow-hidden;
     height: calc(100% - 4rem);
 }
 .footer--bg img{
@@ -486,10 +487,13 @@ div#site--footer {
         @apply hidden;
     }
     .banner--wrapper{
-        @apply mx-auto px-4;
+        @apply mx-auto px-4 mt-8;
     }
     h3.banner--title{
         @apply text-2xl text-center;
+    }
+    h3.media--title.title{
+        @apply hidden;
     }
     p.banner--text, .banner--btn{
         max-width: 16.5625rem;
@@ -502,7 +506,7 @@ div#site--footer {
         @apply w-full;
     }
     .site--social--icons{
-        top: 8rem;
+        top: 10rem;
         @apply left-4 right-auto;
     }
     .site--social--icons ul li {
@@ -572,7 +576,7 @@ div#site--footer {
         @apply mx-auto;
     }
     .site__connect-buton a{
-        @apply text-xs;
+        @apply text-base py-2.5 inline-block;
     }
     .artist--list > ul{
         @apply block whitespace-nowrap overflow-x-auto;
@@ -587,17 +591,68 @@ div#site--footer {
         @apply w-full;
         max-width: calc(100% - 8rem);
     }
+    .site__connect-buton{
+        @apply hidden;
+    }
+    .mobile__navigation .site__connect-buton{
+        @apply block;
+    }
+    .mobile__navigation .toggle--menu{
+        position: relative;
+        z-index: 999;
+    }
+    .mobile__navigation .nav-menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 15.125rem    ;
+        right: 0;
+        text-align: center;
+        background: radial-gradient(50% 50% at 50% 50%, #1D2454 0%, #0B0E27 100%);
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
+        overflow-y: auto;
+        box-shadow: var(--box--shadow);
+    }
+    .mobile__navigation .nav-menu ul,
+    .mobile__navigation .nav-menu ul li{
+        @apply py-4;
+    }
+    .toggle--menu span.active .hamburger--icon,
+    .toggle--menu span .close--icon{
+        @apply hidden;
+    }
+    .toggle--menu span.active .close--icon{
+        @apply flex bg--lightblue text--color--purple rounded-full leading-none w-8 h-8 text-xl font-semibold justify-center items-center;
+    }
+    .nav-menu .site__logo img{
+        @apply w-40 mx-auto;
+    }
+    .main--banner-image{
+        @apply hidden;
+    }
 }
 @media screen and (min-width: 72em){
     .wrapper{
         @apply min-h-screen;
     }
+    .mobile__navigation{
+        @apply hidden;
+    }
     div#site__banner {
         @apply min-h-screen items-center flex;
     }
-    #site__banner .mobile--banner{
+    #site__banner .mobile--banner,
+    h3.media--mb--title.title{
         @apply hidden;
     }    
+    .main--banner-image{
+        margin-top: -42rem;
+        margin-bottom: 10rem;
+    }
+    .main--banner-image img{
+        width: 100%;
+    }
     .mint--block {
         @apply flex items-center mt-12;
     }

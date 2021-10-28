@@ -2,6 +2,7 @@ function Mediacontent(props){
     console.log(props);
     return(
         <div className="media--wrapper wrapper">
+            <h3 className="media--mb--title title">{props.title}</h3>
             <div className="media--item">
                 <img src={props.imgSrc} alt={props.imgAlt} />
             </div>

@@ -4,6 +4,8 @@ import Sitecontent from "./SiteContent/Sitecontent";
 import '../assets/styles/style.css';
 import Footer from "./Footer/Footer";
 import '../assets/styles/banner.css';
+const mainBanner = "./assets/images/banner--main.png";
+
 
 function App() {
     return(
@@ -13,6 +15,10 @@ function App() {
             </div>
             <div id="site__banner">
                 <Sitebanner />
+            </div>
+            
+            <div className="main--banner-image">
+                <img src={mainBanner} alt="main banner" />
             </div>
             <div id="site__content">
                 <Sitecontent />
