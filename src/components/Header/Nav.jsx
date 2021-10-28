@@ -4,28 +4,28 @@ function Nav(){
         <div className="site__navigation">
             <ul className="lg:flex">
                 <li>
-                    <a href="javascript:void(0)">Mintbox</a>
+                    <a href="#mintbox">Mintbox</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Donation</a>
+                    <a href="#donation">Donation</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Sail Map</a>
+                    <a href="#sailmap">Sail Map</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Team</a>
+                    <a href="#team">Team</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Play To Earn</a>
+                    <a href="#playearn">Play To Earn</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">FAQ</a>
+                    <a href="#faqs">FAQ</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Contact us</a>
+                    <a href="#contact">Contact us</a>
                 </li>
             </ul>
         </div>

@@ -1,9 +1,12 @@
+import Socialicons from "../Socialicons/Socialicons";
+
 const dotsImg = "../assets/images/banner-dots.png";
 const bannerimg1 = "../assets/images/pari.png";
 const wave1 = "../assets/images/wave-1.png";
 const wave2 = "../assets/images/wave-2.png";
 const wave3 = "../assets/images/wave-3.png";
 const wave4 = "../assets/images/wave-4.png";
+const mbBanner = "../assets/images/mb-banner.png";
 
 function Sitebanner(){
     return(
@@ -21,6 +24,10 @@ function Sitebanner(){
                         <img src={bannerimg1} alt="Banner Image 1" />
                     </div>
                 </div> */}
+                {/* <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div> */}
             </div>
             <div className="banner--wrapper">
                 <div className="banner--content">
@@ -31,6 +38,10 @@ function Sitebanner(){
                     </div>
                 </div>
             </div>
+            <div className="mobile--banner">
+                <img src={mbBanner} alt="Mobile Banner" />
+            </div>
+            <Socialicons />
         </>
     );
 }

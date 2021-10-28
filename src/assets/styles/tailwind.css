@@ -9,11 +9,14 @@
     --site--bg: radial-gradient(50% 50% at 50% 50%, #1D2454 0%, #0B0E27 100%);
     --bg--dark: #0b0e27;
     --bg--color--purple: #343484;
+    --bg--dark--purple: #191D3D;
     --bg--grey: rgba(185, 250, 245, 0.2);
     --bg--lightblue: #b9faf9;
+    --bg--header--gradiant: linear-gradient(180deg, #111636 0%, rgba(17, 22, 54, 0) 100%);
 
     --text--color--lightBlue: #b9faf5;
     --text--color--pink: #C9B1F5;
+    --text--color--purple: #343484;
     --text--color--grey: rgba(185, 250, 245, 0.2);
 
     --button--border: 0.6px solid var(--text--color--lightBlue);
@@ -30,6 +33,9 @@
 }
 .bg--color--purple{
     background: var(--bg--color--purple);
+}
+.bg--dark--purple{
+    background: var(--bg--dark--purple);
 }
 .bg--dark{
     background: var(--bg--dark);
@@ -50,6 +56,9 @@
 .text--color--lightblue{
     color: var(--text--color--lightBlue);
 }
+.text--color--purple{
+    color: var(--bg--color--purple);
+}
 
 .border-lightblue{
     border-color: var(--border--color--lightblue);
@@ -59,6 +68,9 @@
     font-family: var(--site--font);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     @apply text-white site--bg site--font;
 }
@@ -66,26 +78,29 @@ p:empty{
     @apply hidden;
 }
 .page--wrapper{
-    max-width: 90rem;
     @apply mx-auto;
 }
 .title {
     text-shadow: var(--text--shadow);
-    @apply font-black text--color--pink;
+    @apply font-black text--color--lightblue;
     font-size: 2.875rem;
 }
 h3.title + p{
     text-shadow: var(--text--shadow);
 }
 .wrapper{
-    @apply mx-auto;
-    max-width: 57.5625rem;
+    @apply mx-auto my-20;
+    max-width: 62.3125rem;
+}
+a, button, input[type="submit"], input[type="reset"], input[type="button"]{
+    @apply transition-all;
 }
 
 /* Navigation styling */
 div#site__header {
-    @apply fixed mx-auto inset-x-0;
-    max-width: 90rem;
+    @apply sticky mx-auto inset-x-0 top-0 px-12;
+    z-index: 9999999;
+    background: var(--bg--header--gradiant);
 }
 .site__navigation li{
     @apply mx-4;
@@ -93,10 +108,19 @@ div#site__header {
 .site__navigation li a{
     @apply text-lg;
 }
+.site__navigation li a:hover{
+    @apply text--color--lightblue;
+}
+.site__connect-buton a{
+    @apply bg--lightblue py-2.5 px-4 rounded-xl text-base font-medium text--color--purple;
+}
+.site__connect-buton a:hover{
+    @apply bg--color--purple text--color--lightblue;
+}
 
 /* Banner styling */
 div#site__banner {
-    @apply h-screen items-center flex;
+    @apply mb-12;
 }
 .banner--dots-bg {
     @apply absolute;
@@ -142,6 +166,7 @@ img.banner-wave-4 {
 }
 .banner--wrapper{
     max-width: 61.5rem;
+    z-index: 999;
     @apply mx-auto w-full;
 }
 .banner--content{
@@ -161,24 +186,32 @@ p.banner--text {
 }
 .banner--btn a {
     border: var(--button--border);
-    box-shadow: var(--button--shadow);
-    @apply box-border rounded-xl py-2.5 px-6 bg--color--purple;
+    box-shadow: var(--box--shadow--big);
+    @apply box-border rounded-xl py-2.5 px-6 bg--color--purple inline-block;
 }
-/* div#site__banner:before {content: '';position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: url(/static/media/banner-dots.0f86bb4a.png) no-repeat center;} */
+.banner--btn a:hover {
+    @apply bg--lightblue text--color--purple;
+}
+.site--social--icons {
+    @apply absolute right-12;
+}
+.site--social--icons ul li:not(:last-child) {
+    @apply mb-4;
+}
+.site--social--icons li a img{
+    @apply transition-transform duration-500;
+}
+.site--social--icons li a:hover img{
+    transform: rotate(360deg);
+}
 
 /* Media styling */
 .media--wrapper {
-    @apply h-screen items-center flex;
+    @apply text-center;
 }
 .media--item {
-    @apply mr-12 w-full;
-    max-width: 23.25rem;
-}
-.section--alignment-right .media--wrapper {
-    @apply flex-row-reverse;
-}
-.section--alignment-right .media--item {
-    @apply mr-0 ml-16;
+    @apply w-full mx-auto;
+    max-width: 23.75rem;
 }
 .media--text{
     @apply mt-4; 
@@ -193,8 +226,9 @@ p.banner--text {
 /* Mint Bos styling */
 .wrapper.box--wrapper {
     @apply relative rounded-xl border-white border-solid;
-    padding: 3.25rem 3.25rem 10rem;
+    padding: 3.25rem 3.25rem 7.5rem;
     border-width: 0.0625rem;
+    max-width: 57.5625rem;
 }
 .countdown-time {
     margin-top: -6.75rem;
@@ -227,7 +261,7 @@ p.banner--text {
 .block-content-box {
     background: var(--bg--grey);
     border-width: 0.125rem;
-    @apply p-14 w-full ml-20 border-solid border-lightblue rounded-xl bg--grey;
+    @apply p-14 w-full border-solid border-lightblue rounded-xl bg--grey;
 }
 .mintbox--wrapper .box-content{
     @apply mt-8;
@@ -238,10 +272,11 @@ p.banner--text {
     @apply mx-auto mt-6;
 }
 .mint--block {
-    @apply flex items-center mt-12;
+    @apply mt-12;
 }
 .block--img {
     max-width: 19rem;
+    @apply mx-auto;
 }
 .box-highlight{
     text-shadow: var(--text--shadow);
@@ -260,15 +295,19 @@ p.banner--text {
 .btn a{
     @apply inline-block;
 }
+.btn a img{
+    @apply transition-all duration-500;
+}
+.btn a:hover img{
+    transform: scale(1.125);
+}
 .tune--button{
-    @apply absolute;
-    bottom: 1rem;
-    left: 1rem;
+    @apply absolute bottom-1 left-1/2 transform -translate-x-2/4;
 }
 
 /* Sailmap Wrapper */
 .wrapper.sailmap--wrapper{
-    @apply pt-20 px-20 pb-10;
+    @apply py-10 px-20 bg--dark--purple;
 }
 .sailmap--wrapper h2{
     @apply text--color--lightblue;
@@ -277,7 +316,7 @@ p.banner--text {
     @apply mt-5;
 }
 .sailmap--list > ul > li {
-    @apply border-solid border-lightblue mb-5 py-5 px-10 flex rounded-xl bg--grey delay-300 cursor-pointer; 
+    @apply border-solid border-lightblue mb-5 py-5 px-10 rounded-xl bg--grey delay-300 cursor-pointer; 
     border-width: 0.125rem;
 }
 .sailmap--list > ul > li:hover{
@@ -286,25 +325,19 @@ p.banner--text {
 .list--date span {
     @apply block;
 }
-.list--date {
-    @apply pr-10 mr-10 text-center relative;
-}
 span.list--year {
     @apply font-medium mt-1;
 }
 span.list--month {
     @apply text-2xl font-black;
 }
-.list--date:after {
-    content: '';
-    @apply w-0.5 bg--lightblue h-12 absolute right-0 top-1/2 transform -translate-y-1/2;
-}
 .listing--data li:not(:first-child) {
     @apply mt-3;
 }
 .listing--data ul {
     list-style: disc;
-    list-style-position: inside;
+    list-style-position: outside;
+    @apply ml-5;
 }
 .discord--button {
     @apply text-center mt-12;
@@ -315,14 +348,307 @@ span.list--month {
     border: var(--button--border);
     box-shadow: 0px 0px 30px rgb(185 250 245 / 25%);
 }
+.discord--button a:hover{
+    @apply bg--lightblue text--color--purple;
+}
 
 /* Faqs Styling */
-.faqs--wrapper.wrapper{
-    @apply px-20;
-}
 .faqs--content .title{
     @apply text--color--lightblue mb-5 pr-12 relative;
 }
 .faqs--content .title img{
     @apply w-12 absolute right-0 -top-2;
+}
+
+/* Artists Styling */
+.section--wrapper.wrapper.artist--wrapper {
+    max-width: 68.75rem;
+}
+.artist--wrapper .title{
+    @apply text--color--lightblue;
+}
+.artist--list {
+    @apply mt-6;
+}
+.artist--list > ul {
+    @apply flex flex-wrap -m-4 justify-center;
+}
+.artist--list > ul > li {
+    @apply flex mt-4 items-center w-full p-4;
+    max-width: 25%;
+}
+p.artist--name {
+    @apply text-xl font-black;
+}
+p.artist--contact {
+    @apply text-sm text--color--pink;
+}
+ul.artist--social--links {
+    @apply flex;
+}
+ul.artist--social--links > li a {
+    @apply flex w-7 h-7;
+}
+ul.artist--social--links > li {
+    @apply m-1;
+}
+ul.artist--social--links {
+    @apply mt-2 -mx-1 -mb-1;
+}
+
+/* Footer Styling */
+div#site--footer {
+    @apply relative;
+}
+.footer--bg {
+    @apply absolute left-0 right-0 overflow-y-hidden;
+    height: calc(100% - 4rem);
+}
+.footer--bg img{
+    width: inherit;
+    height: 100%;
+    max-width: inherit;
+}
+.footer--wrapper {
+    @apply relative mx-auto p-4;
+    max-width: 78.5625rem;
+}
+.footer--content {
+    max-width: 22.1875rem;
+}
+.footer--content p{
+    margin-top: 1.625rem;
+}
+.footer--content p span{
+    @apply block;
+}
+.footer--wrapper .site--social--icons{
+    position: inherit;
+    right: inherit;
+    top: inherit;
+    left: inherit;
+}
+.footer--bottom p{
+    @apply p-5 text-center text--color--lightblue;
+}
+
+.Sailmap{
+    position: relative;
+}
+.sailmap--top--images {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    z-index: -1;
+    width: 57.5625rem;
+    transform: translateX(-50%);
+}
+@keyframes ship {
+    from {left: -2.5rem;}
+    to {left: 80%;}	
+}
+.icon--ship {
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 10rem;
+    animation-name: ship;
+    animation-duration: 15s;  
+    animation-fill-mode: forwards;
+}
+
+.light-house {
+    position: absolute;
+    top: -3.75rem;
+    right: -3rem;
+    width: 13rem;
+}
+
+.icon-waves {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 40em){
+    h3.banner--title{
+        @apply text-xl;
+    }
+}
+@media screen and (max-width: 71.9875em){
+    div#site__header{
+        @apply px-4;
+    }
+    .site__navigation{
+        @apply hidden;
+    }
+    .sailmap--top--images{
+        @apply hidden;
+    }
+    .banner--wrapper{
+        @apply mx-auto px-4;
+    }
+    h3.banner--title{
+        @apply text-2xl text-center;
+    }
+    p.banner--text, .banner--btn{
+        max-width: 16.5625rem;
+        @apply text-xs ml-14;
+    }
+    .mobile--banner{
+        @apply -mt-32
+    }
+    .mobile--banner img{
+        @apply w-full;
+    }
+    .site--social--icons{
+        top: 8rem;
+        @apply left-4 right-auto;
+    }
+    .site--social--icons ul li {
+        @apply mb-3;
+    }
+    .site--social--icons ul li a{
+        @apply w-8 block;
+    }
+    #site__content{
+        @apply px-4;
+    }
+    .wrapper.box--wrapper{
+        @apply px-3;
+    }
+    .countdown-time {
+        margin-top: -5.75rem;
+    }
+    .countdown-time ul li {
+        @apply ml-1 text-xs;
+    }
+    .countdown-time ul span + span {
+        font-size: 1.5rem;
+    }
+    .title{
+        font-size: 2.25rem;
+    }
+    .wrapper.sailmap--wrapper{
+        @apply p-0 border-0 bg-transparent;
+    }
+    .sailmap--list > ul > li {
+        @apply px-5 relative mt-20;
+    }
+    .list--date {
+        @apply absolute flex items-center left-0;
+        top: -2.5rem;
+    }
+    .list--date span.list--year{
+        @apply text--color--pink;
+    }
+    .list--date span + span{
+        @apply ml-2;
+    }
+    .faqs--content .title{
+        @apply text-left text--color--pink;
+    }
+    .faqs--content .title img{
+        @apply top-2 w-20;
+    }
+    .faqs--content .title + p{
+        @apply hidden;
+    }
+    .footer--wrapper .site--social--icons{
+        @apply mt-6;
+    }
+    .footer--wrapper .site--social--icons ul{
+        @apply text-center;
+    }
+    .footer--wrapper .site--social--icons ul li{
+        @apply mb-0 inline-block mx-2;
+    }
+    .footer--bg img{
+        width: inherit;
+        height: 100%;
+        max-width: inherit;
+    }
+    .media--item img{
+        @apply mx-auto;
+    }
+    .site__connect-buton a{
+        @apply text-xs;
+    }
+    .artist--list > ul{
+        @apply block whitespace-nowrap overflow-x-auto;
+    }
+    .artist--list > ul > li{
+        @apply inline-flex max-w-max;
+    }
+    .artist--img{
+        @apply w-32;
+    }
+    .artist--detail{
+        @apply w-full;
+        max-width: calc(100% - 8rem);
+    }
+}
+@media screen and (min-width: 72em){
+    .wrapper{
+        @apply min-h-screen;
+    }
+    div#site__banner {
+        @apply min-h-screen items-center flex;
+    }
+    #site__banner .mobile--banner{
+        @apply hidden;
+    }    
+    .mint--block {
+        @apply flex items-center mt-12;
+    }
+    .block-content-box {
+        margin-left: 4.625rem;
+    }
+    .tune--button{
+        @apply left-1 transform-none;
+    }
+    .media--wrapper {
+        @apply items-center flex text-left;
+    }
+    .media--item {
+        @apply mr-12;
+    }
+    .section--alignment-right .media--wrapper {
+        @apply flex-row-reverse;
+    }
+    .section--alignment-right .media--item {
+        @apply mr-0 ml-16;
+    }
+    .list--date {
+        @apply pr-10 mr-10 text-center relative;
+    }
+    .sailmap--list > ul > li {
+        @apply flex px-5;
+    }
+    /* span.list--year {
+        @apply font-medium mt-1;
+    }
+    span.list--month {
+        @apply text-2xl font-black;
+    } */
+    .list--date:after {
+        content: '';
+        @apply w-0.5 bg--lightblue h-12 absolute right-0 top-1/2 transform -translate-y-1/2;
+    }
+    .faqs--wrapper.wrapper{
+        @apply px-20;
+    }
+    .footer--wrapper {
+        @apply flex justify-between items-center;
+    }
+}
+@media screen and (min-width: 72em) and (max-width: 86em){
+    html{
+        font-size: 1vw;
+    }
+}
+@media screen and (min-width: 121em){
+    html{
+        font-size: 1vw;
+    }
 }
