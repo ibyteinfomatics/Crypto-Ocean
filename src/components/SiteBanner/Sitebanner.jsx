@@ -24,10 +24,14 @@ function Sitebanner(){
                         <img src={bannerimg1} alt="Banner Image 1" />
                     </div>
                 </div> */}
-                {/* <div class="ocean">
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                </div> */}
+                <div class="ocean">
+                    <div class="wave" data-aos="fade-left" data-aos-duration="1000"></div>
+                    <div class="wave" data-aos="fade-up" data-aos-duration="1000"></div>
+                </div>
+                <div class="ocean2">
+                    <div class="wave" data-aos="fade-left" data-aos-duration="1000"></div>
+                    <div class="wave" data-aos="fade-up" data-aos-duration="1000"></div>
+                </div>
             </div>
             <div className="banner--wrapper">
                 <div className="banner--content" data-aos="fade-up">

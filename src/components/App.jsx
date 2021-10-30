@@ -14,7 +14,9 @@ const mainBanner = "./assets/images/banner--main.png";
 
 function App() {
     useEffect(() => {
-        Aos.init();
+        Aos.init({
+            once: true
+        });
     }, []);
     return(
         <div className="page--wrapper">
