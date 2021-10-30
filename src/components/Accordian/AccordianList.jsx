@@ -1,25 +1,33 @@
 import React, {useState} from 'react';
-
+import AccordionData from './api';
 const AccordianList = ({idx, id, title, content}) => {
 
-    const [show, setShow] = useState(false);
-    const [_id,setId]=useState()
+    const [show, setShow] = useState(true);
+    const [active_id,setId]=useState(0);
     const accorId = `accor_${id}`
-    const handleChange=(idx)=>{
-        setShow(!show)
-        setId(idx+1)
+    const [data, setData] = useState(AccordionData);
+
+
+    const handleChange=(idd)=>{
+       console.log(idd);
+       setId(idd);
     }
 
     return (
         <>
-            <li id={accorId} className={show && id==_id ?  "const active--list" : "const"}>
-                <div className="accor-head">
-                    <p onClick={() => handleChange(idx)} className={show? "active" : ""}>{title}</p>
-                </div>
-                <div className="accor-data">
-                <p>{content}</p>
-                </div>
-            </li>
+            <ul>{
+                data.map((curElem,index) => {
+                    return <li id={curElem.id} className={show && curElem.id == active_id ? "const active--list" : "const"} data-activeid={active_id}>
+                        <div className="accor-head">
+                            <p onClick={() => handleChange(curElem.id)} className={show && curElem.id == active_id ? "active" : ""}>{curElem.title}</p>
+                        </div>
+                        <div className="accor-data">
+                        <p>{curElem.content}</p>
+                        </div>
+                    </li>
+                })
+                }</ul>
+           
         </>
     )
 }

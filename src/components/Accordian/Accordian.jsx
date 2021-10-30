@@ -14,14 +14,7 @@ const Faqs = () => {
               <p data-aos="fade-up" data-aos-duration="1000">Any questions you have we are here to answer.</p>
             </div>
             <div className="accordian--list" data-aos="zoom-in" data-aos-duration="1000">
-                <ul>
-                  {
-                    data.map((curElem,index) => {
-                      const {id} = curElem;
-                      return <AccordianList key={id} idx={index}   {...curElem} />
-                    })
-                  }
-                </ul>
+            <AccordianList  />
             </div>
           </div>
         </>
