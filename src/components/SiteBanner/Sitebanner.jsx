@@ -1,20 +1,20 @@
 import Socialicons from "../Socialicons/Socialicons";
 
-const dotsImg = "../assets/images/banner-dots.png";
-const bannerimg1 = "../assets/images/pari.png";
-const wave1 = "../assets/images/wave-1.png";
-const wave2 = "../assets/images/wave-2.png";
-const wave3 = "../assets/images/wave-3.png";
-const wave4 = "../assets/images/wave-4.png";
-const mbBanner = "../assets/images/mb-banner.png";
+// const dotsImg = "../assets/images/banner-dots.png";
+// const bannerimg1 = "../assets/images/pari.png";
+// const wave1 = "../assets/images/wave-1.png";
+// const wave2 = "../assets/images/wave-2.png";
+// const wave3 = "../assets/images/wave-3.png";
+// const wave4 = "../assets/images/wave-4.png";
+// const mbBanner = "../assets/images/mb-banner.png";
 
 function Sitebanner(){
     return(
         <>
             <div className="banner--images">
-                <div className="banner--dots-bg">
+                {/* <div className="banner--dots-bg">
                     <img src={dotsImg} alt="Dots Image" />
-                </div>
+                </div> */}
                 {/* <div className="banner--waves">
                     <img src={wave4} alt="Banner waves" className="banner-wave-1" />
                     <img src={wave3} alt="Banner waves" className="banner-wave-2" />
@@ -30,7 +30,7 @@ function Sitebanner(){
                 </div> */}
             </div>
             <div className="banner--wrapper">
-                <div className="banner--content">
+                <div className="banner--content" data-aos="fade-up">
                     <h3 className="banner--title">CryptOcean Metaverse</h3>
                     <p className="banner--text">The one stop shop for 3D NFT art. With $Squid token airdrops for all holders, plus a play to earn game launching in the roadmap, CryptOcean is the ultimate NFT experience.</p>
                     <div className="banner--btn">
@@ -38,10 +38,9 @@ function Sitebanner(){
                     </div>
                 </div>
             </div>
-            <div className="mobile--banner">
-                <img src={mbBanner} alt="Mobile Banner" />
+            <div className="site--social--icons" data-aos="fade-up" data-aos-duration="1000">
+                <Socialicons />
             </div>
-            <Socialicons />
         </>
     );
 }

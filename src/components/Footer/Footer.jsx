@@ -10,7 +10,7 @@ function Footer(){
                 <img src={footerbg} alt="Footer Background" />
             </div>
             <div className="footer--wrapper">
-                <div className="footer--content">
+                <div className="footer--content" data-aos="fade-right" data-aos-duration="1000">
                     <div className="footer--logo">
                         <a href="/">
                             <img src={footerlogo} alt="Footer Logo" />
@@ -19,7 +19,9 @@ function Footer(){
                     <p><span>Join The Ocean</span>
                     Don't miss out on our limited collection of Magic Staffs</p>
                 </div>
-                <Socialicons />
+                <div className="site--social--icons" data-aos="zoom-in" data-aos-duration="1000">
+                    <Socialicons />
+                </div>
             </div>
             <div className="footer--bottom">
                 <p>All Right Reserved 2021 @Ocean.org</p>

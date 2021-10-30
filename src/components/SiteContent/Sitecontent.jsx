@@ -3,6 +3,7 @@ import Mintbox from "../Mintbox/Mintbox";
 import Sailmap from "../SailMap/Sailmap";
 import Faqs from "../Accordian/Accordian";
 import Artists from "../Artists/Artists";
+import ProfileStyleData from "../StyleNProfile/StyleProfile";
 
 const Story ="./assets/images/story_img.png";
 const Donation ="./assets/images/donation_img.png";
@@ -36,6 +37,11 @@ function Sitecontent(){
             </div>
             <div className="Sailmap" id="sailmap">
                 <Sailmap />
+            </div>
+            <div className="ProfileSlider" id="ProfileSlider">
+                <div className="wrapper profile--wrapper">
+                    <ProfileStyleData />
+                </div>
             </div>
             <div className="media--section section--alignment-right" id="playearn">
                 <Mediacontent 

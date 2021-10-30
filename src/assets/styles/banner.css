@@ -1,5 +1,5 @@
 
-#wave1{
+/* #wave1{
   opacity: 0.3
 }
 .ocean { 
@@ -19,7 +19,6 @@
   height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
-  /* background-image: url('../assets/public/images/Rectangle 4.svg'); */
 }
 
 .wave:nth-of-type(2) {
@@ -44,6 +43,15 @@
   50% {
     transform: translate3d(0,5px,0);
   }
+} */
+
+/* Banner Slick Slider Styling */
+div#site__banner__slider .slick-slider {
+  max-width: 72rem;
+  margin: auto;
 }
 
-  
+div#site__banner__slider .slick-slider .slick-list {
+  max-width: 30rem;
+  margin-left: auto;
+}

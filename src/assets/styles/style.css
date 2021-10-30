@@ -31300,6 +31300,7 @@ video {
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -31715,11 +31716,13 @@ p.banner--text {
 /* Sailmap Wrapper */
 
 .wrapper.sailmap--wrapper{
+  overflow: hidden;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
   background: var(--bg--dark--purple);
+  margin-top: 15rem;
 }
 
 .sailmap--wrapper h2{
@@ -31886,6 +31889,7 @@ ul.artist--social--links {
 /* Footer Styling */
 
 div#site--footer {
+  overflow: hidden;
   position: relative;
 }
 
@@ -31906,6 +31910,7 @@ div#site--footer {
 .footer--wrapper {
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   padding: 1rem;
   position: relative;
   max-width: 78.5625rem;
@@ -31972,15 +31977,13 @@ div#site--footer {
 
 .icon--ship {
   position: absolute;
-  left: -2.5rem;
+  /* left: -2.5rem; */
   top: 0;
   width: 10rem;
-  -webkit-animation-name: ship;
-          animation-name: ship;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  right: 3rem;
+  /* animation-name: ship;
+    animation-duration: 15s;  
+    animation-fill-mode: forwards; */
 }
 
 .light-house {
@@ -31993,6 +31996,20 @@ div#site--footer {
 .icon-waves {
   position: absolute;
   top: 4rem;
+  width: 100%;
+}
+
+.profile-slider-cont{
+  max-width: 37.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.profile-slider-data{
+  max-width: 33.75rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
@@ -32170,6 +32187,7 @@ div#site--footer {
     line-height: 1.5rem;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
+    white-space: nowrap;
   }
 
   .artist--list > ul{
@@ -32211,14 +32229,19 @@ div#site--footer {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 15.125rem    ;
+    width: 0;
     right: 0;
     text-align: center;
     background: radial-gradient(50% 50% at 50% 50%, #1D2454 0%, #0B0E27 100%);
     padding-top: 4rem;
     padding-bottom: 1.5rem;
     overflow-y: auto;
+    transition: ease .7s width;
     box-shadow: var(--box--shadow);
+  }
+
+  .mobile__navigation .nav-menu#active-menu{
+    width: 15.125rem;
   }
 
   .mobile__navigation .nav-menu ul, .mobile__navigation .nav-menu ul li {
@@ -32257,11 +32280,29 @@ div#site--footer {
   .main--banner-image{
     display: none;
   }
+
+  .profile-slider-cont, .profile-slider-data {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 48em){
+  div#site__banner__slider {
+    margin-top: -13rem;
+    margin-bottom: 10rem;
+  }
 }
 
 @media screen and (min-width: 72em){
   .wrapper{
-    min-height: 100vh;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .site__navigation ul{
+    display: -webkit-flex;
+    display: flex;
   }
 
   .mobile__navigation{
@@ -32273,7 +32314,8 @@ div#site--footer {
     display: flex;
     -webkit-align-items: center;
             align-items: center;
-    min-height: 100vh;
+    margin-bottom: 0px;
+    padding-top: 10rem;
   }
 
   #site__banner .mobile--banner, h3.media--mb--title.title {
@@ -32343,13 +32385,6 @@ div#site--footer {
     padding-right: 1.25rem;
   }
 
-  /* span.list--year {
-        @apply font-medium mt-1;
-    }
-    span.list--month {
-        @apply text-2xl font-black;
-    } */
-
   .list--date:after {
     content: '';
     height: 3rem;
@@ -32382,6 +32417,15 @@ div#site--footer {
             align-items: center;
     -webkit-justify-content: space-between;
             justify-content: space-between;
+  }
+
+  .wrapper.profile--wrapper{
+    max-width: 71.375rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-top: 9rem;
   }
 }
 

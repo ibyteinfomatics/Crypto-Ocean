@@ -3,7 +3,7 @@ import Connectbutton from "./Connectbutton";
 import Logo from './Logo';
 const hamburger = "./assets/images/hamburger-icon.png";
 const menuNav  = 
-    <ul className="lg:flex">
+    <ul>
         <li>
             <a href="#mintbox">Mintbox</a>
         </li>
@@ -44,13 +44,12 @@ function Nav(){
                         <span className="close--icon">X</span>
                     </span>
                 </button>
-                { show &&
-                    <div className="nav-menu">
-                        <Connectbutton />
-                        {menuNav}
-                        <Logo />
-                    </div>
-                }
+                
+                <div className="nav-menu"  id={show? "active-menu" : ""}>
+                    <Connectbutton />
+                    {menuNav}
+                    <Logo />
+                </div>
             </div>
         </>
     )

@@ -1,4 +1,5 @@
 import Countdown from 'react-countdown';
+import React, {useEffect} from 'react'
 
 const Shark = "./assets/images/Shark.png";
 const MintButton = "./assets/images/mint-button.png";
@@ -37,21 +38,21 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 function Mintbox(){
     return (
         <>
-            <div className="wrapper box--wrapper mintbox--wrapper">
-                <div className="countdown-time">
+            <div className="wrapper box--wrapper mintbox--wrapper" data-aos="fade-in">
+                <div className="countdown-time" data-aos="zoom-in" data-aos-duration="1000">
                     <Countdown
                         date={Date.now() + 500000000}
                         renderer={renderer}
                     />
                 </div>
                 <div className="box-content text-center">
-                    <h3 className="title">Mint Box</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor</p>
+                    <h3 data-aos="fade-up" data-aos-duration="1000" className="title">Mint Box</h3>
+                    <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor</p>
                     <div className="mint--block">
-                        <div className="block--img">
+                        <div data-aos="zoom-in" data-aos-duration="1000" className="block--img">
                             <img src={Shark} alt="Shark Image" />
                         </div>
-                        <div className="block-content-box text-center">
+                        <div data-aos="zoom-in" data-aos-duration="1000" className="block-content-box text-center">
                             <p className="box-highlight text--color--pink">Price per each</p>
                             <h4 className="box-subtitle">0.1 ETH</h4>
                             <div className="box-counter">
@@ -63,7 +64,7 @@ function Mintbox(){
                             </div>
                         </div>
                     </div>
-                    <div className="tune--button btn text-left">
+                    <div className="tune--button btn text-left" data-aos="fade-down" data-aos-duration="1000">
                         <a href="javascript:void(0)"><img src={StayTunedButton} alt="Stay Tuned Button" /></a>
                     </div>
                 </div>

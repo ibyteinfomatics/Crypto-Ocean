@@ -10,15 +10,15 @@ const Faqs = () => {
         <>
           <div className="section--wrapper wrapper faqs--wrapper">
             <div className="faqs--content text-center">
-              <h3 className="title">Frequently Asked  Questions <span><img src={questMark} alt="Question Mark" /></span></h3>
-              <p>Any questions you have we are here to answer.</p>
+              <h3 className="title" data-aos="fade-up" data-aos-duration="1000">Frequently Asked  Questions <span><img src={questMark} alt="Question Mark" /></span></h3>
+              <p data-aos="fade-up" data-aos-duration="1000">Any questions you have we are here to answer.</p>
             </div>
-            <div className="accordian--list">
+            <div className="accordian--list" data-aos="zoom-in" data-aos-duration="1000">
                 <ul>
                   {
-                    data.map((curElem) => {
+                    data.map((curElem,index) => {
                       const {id} = curElem;
-                      return <AccordianList key={id} {...curElem} />
+                      return <AccordianList key={id} idx={index}   {...curElem} />
                     })
                   }
                 </ul>

@@ -11,7 +11,7 @@ function Sailmap(){
             <div className="icon-waves">
                 <img src={iconwaves} alt="Waves" />
             </div>
-            <div className="icon--ship">
+            <div className="icon--ship" data-aos="slide-right">
                 <img src={iconship} alt="Icon Ship" />
             </div>
             <div className="light-house">
@@ -25,22 +25,30 @@ function Sailmap(){
             </div>
             <div className="sailmap--list">
                 <ul>
-                    <Sailmaplist 
+                    <Sailmaplist  
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
                         listYear = "2021"
                         listMonth = "Aug"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
                         listYear = "2021"
                         listMonth = "Sep"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
                         listYear = "2021"
                         listMonth = "Oct"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
                         listYear = "2021"
                         listMonth = "Nov"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
@@ -49,7 +57,7 @@ function Sailmap(){
             </div>
         </div>
         
-        <div className="btn discord--button">
+        <div className="btn discord--button" data-aos="fade-down" data-aos-duration="1000">
             <a href="javascript:void(0)">Join Discord</a>
         </div>
         </>

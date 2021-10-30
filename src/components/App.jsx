@@ -4,10 +4,18 @@ import Sitecontent from "./SiteContent/Sitecontent";
 import '../assets/styles/style.css';
 import Footer from "./Footer/Footer";
 import '../assets/styles/banner.css';
+import '../assets/styles/3d-slider.css';
+import Bannerslider from "./Sitesliders/Bannersliders/Bannerslider";
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const mainBanner = "./assets/images/banner--main.png";
 
 
 function App() {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return(
         <div className="page--wrapper">
             <div id="site__header" className="flex justify-between items-end py-4">
@@ -16,10 +24,12 @@ function App() {
             <div id="site__banner">
                 <Sitebanner />
             </div>
-            
-            <div className="main--banner-image">
-                <img src={mainBanner} alt="main banner" />
+            <div id="site__banner__slider">
+                <Bannerslider />
             </div>
+            {/* <div className="main--banner-image">
+                <img src={mainBanner} alt="main banner" />
+            </div> */}
             <div id="site__content">
                 <Sitecontent />
             </div>
