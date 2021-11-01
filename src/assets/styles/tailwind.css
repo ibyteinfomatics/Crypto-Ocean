@@ -498,7 +498,7 @@ div#site--footer {
     transition: transform .5s;
 }
 .artist--list li:hover .artist--img img{
-    transform: scale(1.25);
+    /* transform: scale(1.25); */
 }
 @media screen and (max-width: 40em){
     h3.banner--title{

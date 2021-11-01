@@ -32006,8 +32006,7 @@ div#site--footer {
 }
 
 .artist--list li:hover .artist--img img{
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  /* transform: scale(1.25); */
 }
 
 @media screen and (max-width: 40em){
