@@ -15,12 +15,12 @@ function Sailmap(){
         <>
         <div className="sailmap--top--images">
             <div className="icon-waves">
-                <img src={iconwaves} alt="Waves" />
+                <img src={iconwaves} alt="Waves" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true" />
             </div>
-            <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="2000" data-aos-once="true">
+            <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true">
                 <img src={iconship} alt="Icon Ship" />
             </div>
-            <div className="light-house mobile--view" data-aos="slide-left" data-aos-duration="2000" data-aos-once="true">
+            <div className="light-house mobile--view" data-aos="slide-left" data-aos-duration="3000" data-aos-once="true">
                 <img src={lightHouse} alt="Light House" />
             </div>
             <div className="icon--ship desktop-view">

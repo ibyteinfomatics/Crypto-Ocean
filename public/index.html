@@ -11,6 +11,62 @@
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          setInterval(function() {
+              var first = $('.slider-single').eq(0).attr('class');
+              var second = $('.slider-single').eq(1).attr('class');
+              var third = $('.slider-single').eq(2).attr('class');
+              if (new RegExp("\\b" + "active" + "\\b").test(first)) {
+                  $('.slider-single').eq(0).removeClass('active');
+                  $('.slider-single').eq(0).removeClass('proactive');
+                  $('.slider-single').eq(0).addClass('preactive');
+  
+                  $('.slider-single').eq(1).removeClass('proactive');
+                  $('.slider-single').eq(1).removeClass('preactive');
+                  $('.slider-single').eq(1).addClass('active');
+  
+                  $('.slider-single').eq(2).removeClass('preactive');
+                  $('.slider-single').eq(2).removeClass('proactive');
+                  $('.slider-single').eq(2).addClass('proactive');
+  
+                  console.log('first')
+  
+              } else if (new RegExp("\\b" + "active" + "\\b").test(second)) {
+                  $('.slider-single').eq(1).removeClass('active');
+                  $('.slider-single').eq(1).removeClass('proactive');
+                  $('.slider-single').eq(1).addClass('preactive');
+  
+                  $('.slider-single').eq(2).removeClass('proactive');
+                  $('.slider-single').eq(2).removeClass('preactive');
+                  $('.slider-single').eq(2).addClass('active');
+  
+                  $('.slider-single').eq(0).removeClass('preactive');
+                  $('.slider-single').eq(0).removeClass('proactive');
+                  $('.slider-single').eq(0).addClass('proactive');
+  
+                  console.log('second')
+  
+              } else if (new RegExp("\\b" + "active" + "\\b").test(third)) {
+                  $('.slider-single').eq(2).removeClass('active');
+                  $('.slider-single').eq(2).removeClass('proactive');
+                  $('.slider-single').eq(2).addClass('preactive');
+  
+                  $('.slider-single').eq(0).removeClass('proactive');
+                  $('.slider-single').eq(0).removeClass('preactive');
+                  $('.slider-single').eq(0).addClass('active');
+  
+                  $('.slider-single').eq(1).removeClass('preactive');
+                  $('.slider-single').eq(1).removeClass('proactive');
+                  $('.slider-single').eq(1).addClass('proactive');
+                  console.log('third')
+              }
+  
+          }, 1500);
+      });
+  </script>
     <title>React App</title>
   </head>
   <body>

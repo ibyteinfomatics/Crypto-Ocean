@@ -7,7 +7,8 @@ let slides = [
 ];
 
 function ProfileSlider(){
-    return <Carousel slides={slides} autoplay={false} interval={3000}/>;
+    
+    return <Carousel slides={slides} />;
 }
 
 export default ProfileSlider;
