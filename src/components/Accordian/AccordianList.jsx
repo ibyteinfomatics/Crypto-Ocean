@@ -9,8 +9,9 @@ const AccordianList = ({idx, id, title, content}) => {
 
 
     const handleChange=(idd)=>{
-       console.log(idd);
-       setId(idd);
+       //console.log(idd);
+       (active_id==idd ? setId(0) : setId(idd));
+       
     }
 
     return (

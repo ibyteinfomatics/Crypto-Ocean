@@ -2,7 +2,7 @@
 
 function Sailmaplist(props){
     return(
-        <li data-aos={props.fadeAni} data-aos-duration={props.fadedur}>
+        <li data-aos={props.fadeAni} data-aos-duration={props.fadedur} data-aos-once={props.efftrept}>
             <div className="list--date">
                 <span className="list--year">{props.listYear}</span>
                 <span className="list--month">{props.listMonth}</span>

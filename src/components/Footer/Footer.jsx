@@ -19,7 +19,7 @@ function Footer(){
                     <p><span>Join The Ocean</span>
                     Don't miss out on our limited collection of Magic Staffs</p>
                 </div>
-                <div className="site--social--icons" data-aos="zoom-in" data-aos-duration="1000">
+                <div className="site--social--icons">
                     <Socialicons />
                 </div>
             </div>

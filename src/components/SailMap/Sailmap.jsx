@@ -1,20 +1,32 @@
+// import React, {useEffect} from 'react';
 import Sailmaplist from "./Sailmaplist";
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 const iconship = "./assets/images/icon-ship.png";
 const lightHouse = "./assets/images/light-house.png";
 const iconwaves = "./assets/images/waves.png";
 
 function Sailmap(){
+    // useEffect(() => {
+    //     Aos.init();
+    // }, []);
     return(
         <>
         <div className="sailmap--top--images">
             <div className="icon-waves">
                 <img src={iconwaves} alt="Waves" />
             </div>
-            <div className="icon--ship" data-aos="slide-right">
+            <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="2000" data-aos-once="true">
                 <img src={iconship} alt="Icon Ship" />
             </div>
-            <div className="light-house">
+            <div className="light-house mobile--view" data-aos="slide-left" data-aos-duration="2000" data-aos-once="true">
+                <img src={lightHouse} alt="Light House" />
+            </div>
+            <div className="icon--ship desktop-view">
+                <img src={iconship} alt="Icon Ship" />
+            </div>
+            <div className="light-house desktop-view">
                 <img src={lightHouse} alt="Light House" />
             </div>
         </div>
@@ -28,6 +40,7 @@ function Sailmap(){
                     <Sailmaplist  
                         fadeAni= "slide-left"
                         fadeDur= "1000"
+                        efftrept="true"
                         listYear = "2021"
                         listMonth = "Aug"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
@@ -35,6 +48,7 @@ function Sailmap(){
                     <Sailmaplist 
                         fadeAni= "slide-left"
                         fadeDur= "1000"
+                        efftrept="true"
                         listYear = "2021"
                         listMonth = "Sep"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
@@ -42,6 +56,7 @@ function Sailmap(){
                     <Sailmaplist 
                         fadeAni= "slide-left"
                         fadeDur= "1000"
+                        efftrept="true"
                         listYear = "2021"
                         listMonth = "Oct"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
@@ -49,6 +64,7 @@ function Sailmap(){
                     <Sailmaplist 
                         fadeAni= "slide-left"
                         fadeDur= "1000"
+                        efftrept="true"
                         listYear = "2021"
                         listMonth = "Nov"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."

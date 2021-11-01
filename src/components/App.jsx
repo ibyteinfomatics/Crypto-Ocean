@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 import '../assets/styles/banner.css';
 import '../assets/styles/3d-slider.css';
 import Bannerslider from "./Sitesliders/Bannersliders/Bannerslider";
-import React, {useEffect} from 'react'
+import React, {useEffect} from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 const mainBanner = "./assets/images/banner--main.png";
