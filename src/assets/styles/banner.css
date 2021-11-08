@@ -203,15 +203,16 @@ img.banner-wave-4 {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  animation: animate 4s ease-in-out;
+  animation: animate 4s linear infinite;
   animation-delay: calc(1 * 0.25s);
 }
 @keyframes animate {
   0%,100%{
-    transform: translateY(0rem);
+    transform: translate(0rem, 0rem);
   }
   50%{
-    transform: translateY(1rem);
+    transform: translate(1rem, 1rem);
+    left: -1rem;
   }
 }
 .wave#wave1{

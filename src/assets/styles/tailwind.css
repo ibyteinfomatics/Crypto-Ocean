@@ -19,14 +19,14 @@
     --text--color--purple: #343484;
     --text--color--grey: rgba(185, 250, 245, 0.2);
 
-    --button--border: 0.6px solid var(--text--color--lightBlue);
+    --button--border: 0.6px solid #b9faf5;
 
     --box--shadow--big: 0px 0px 30px rgba(185, 250, 245, 0.25);
     --box--shadow: 0px 4px 10px rgba(185, 250, 245, 0.1);
 
     --text--shadow: 0px 10px 60px rgba(255, 255, 255, 0.4);
 
-    --border--color--lighblue: var(--text--color--lightBlue);
+    --border--color--lighblue: #b9faf5;
 }
 .bg--grey{
     background: var(--bg--grey);
@@ -184,7 +184,7 @@ p.banner--text {
 /* Mint Bos styling */
 .wrapper.box--wrapper {
     @apply relative rounded-xl border-white border-solid;
-    padding: 3.25rem 3.25rem 7.5rem;
+    padding: 3.25rem 3.25rem;
     border-width: 0.0625rem;
     max-width: 57.5625rem;
 }
@@ -260,7 +260,10 @@ p.banner--text {
     transform: scale(1.125);
 }
 .tune--button{
-    @apply absolute bottom-1;
+    @apply absolute bottom-1 transition-all opacity-0;
+}
+.mint--block:hover + .tune--button{
+    @apply block opacity-100;
 }
 
 /* Sailmap Wrapper */
@@ -447,6 +450,16 @@ div#site--footer {
 }
 .artist--list li:hover .artist--img img{
     /* transform: scale(1.25); */
+}
+.progress--bar-block{
+    @apply mt-20 relative;
+}
+.progress--bar{
+    @apply overflow-hidden h-2 text-xs flex rounded border border-solid;
+    border-color: var(--border--color--lighblue);
+}
+.progress--bar--filled{
+    @apply shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg--lightblue absolute top-0 h-2 rounded;
 }
 @media screen and (max-width: 40em){
     h3.banner--title{

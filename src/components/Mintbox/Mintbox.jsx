@@ -64,9 +64,18 @@ function Mintbox(){
                             </div>
                         </div>
                     </div>
-                    <div className="tune--button btn text-left" data-aos="fade-down" data-aos-duration="1000">
+                    <div className="tune--button btn text-left">
                         <a href="javascript:void(0)"><img src={StayTunedButton} alt="Stay Tuned Button" /></a>
                     </div>
+                    {/* <div className="progress--bar-block">
+                        <div className="progress--bar">
+                            <div
+                            style={{width: "30%"}}
+                            className="progress--bar--filled"
+                            ></div>
+                        </div>
+                        <p className="mt-3">10,584 of 12,000 marauders remaining</p>
+                    </div> */}
                 </div>
             </div>
         </>

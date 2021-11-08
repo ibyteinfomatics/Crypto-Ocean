@@ -25,18 +25,18 @@ const settings = {
     cssEase: 'ease-in-out',
     touchThreshold: 100
   };
-  var wave1 = "--i:1";
-  var wave2 = "--i:2";
-  var wave3 = "--i:3";
-  var wave4 = "--i:4";
+//   var wave1 = "--i:1";
+//   var wave2 = "--i:2";
+//   var wave3 = "--i:3";
+//   var wave4 = "--i:4";
 function Bannerslider(){
     return(
         <>
             <div className="site--banner--slider">
                 <div className="banner--waves waves-top">
-                    <div className="wave" id="wave1" style={{wave1}}></div>
-                    <div className="wave" id="wave2" style={{wave2}}></div>
-                    <div className="wave" id="wave3" style={{wave3}}></div>
+                    <div className="wave" id="wave1"></div>
+                    <div className="wave" id="wave2"></div>
+                    <div className="wave" id="wave3"></div>
                 </div>
                 <Slider {...settings}>
                     <BannerSliderImages SliderImg={BannerSliderImg1} />
@@ -44,7 +44,7 @@ function Bannerslider(){
                     <BannerSliderImages SliderImg={BannerSliderImg3} />
                 </Slider>
                 <div className="banner--waves waves-top">
-                    <div className="wave" id="wave4" style={{wave4}}></div>
+                    <div className="wave" id="wave4"></div>
                 </div>
             </div>
             {/* <div className="banner--waves waves-bottom">

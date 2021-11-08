@@ -114,21 +114,20 @@
 // });
 </script>
 
-  <script>
-    var wave1 = document.getElementById('wave1');
-    var wave2 = document.getElementById('wave2');
-    var wave3 = document.getElementById('wave3');
-    var wave4 = document.getElementById('wave4');
+<script type="text/javascript">
+  let wave1 = document.getElementById('wave1');
+  let wave2 = document.getElementById('wave2');
+  let wave3 = document.getElementById('wave3');
+  let wave4 = document.getElementById('wave4');
 
     window.addEventListener('scroll', function(){
-      var value = window.scrollY;
-
-      wave1.style.backgroundPositionX = 0 + value + 'rem';
-      wave2.style.backgroundPositionX = 10 + value + 'rem';
-      wave3.style.backgroundPositionX = 15 + value + 'rem';
-      wave4.style.backgroundPositionX = 25 + value + 'rem';
-    })
-  </script>
+        let value = window.scrollY;
+        wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+        wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+        wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+        wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+    });
+</script>
 
     <title>React App</title>
   </head>
