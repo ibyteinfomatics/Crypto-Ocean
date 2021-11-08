@@ -764,9 +764,9 @@ div#site--footer {
         top: 0;
         width: 10rem;
         /* right: 3rem; */
-        animation-name: ship;
+        /*animation-name: ship;
         animation-duration: 15s;  
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards;*/
     }
 }
 @media screen and (min-width: 72em) and (max-width: 86em){
