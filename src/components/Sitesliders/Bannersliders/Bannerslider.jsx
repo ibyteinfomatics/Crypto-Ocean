@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -30,22 +30,38 @@ const settings = {
 //   var wave3 = "--i:3";
 //   var wave4 = "--i:4";
 function Bannerslider(){
+    useEffect(() => {
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+            wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+            wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+            wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+        });
+
+    }, []);
     return(
         <>
             <div className="site--banner--slider">
                 <div className="banner--waves waves-top">
-                    <div className="wave" id="wave1"></div>
-                    <div className="wave" id="wave2"></div>
-                    <div className="wave" id="wave3"></div>
+                    <div className="wave" id="wave1" style={{"--i":"1"}}></div>
+                    <div className="wave" id="wave2" style={{"--i":"2"}}></div>
+                    <div className="wave" id="wave3" style={{"--i":"3"}}></div>
+                    <div className="wave" id="wave4" style={{"--i":"4"}}></div>
                 </div>
                 <Slider {...settings}>
                     <BannerSliderImages SliderImg={BannerSliderImg1} />
                     <BannerSliderImages SliderImg={BannerSliderImg2} />
                     <BannerSliderImages SliderImg={BannerSliderImg3} />
                 </Slider>
-                <div className="banner--waves waves-top">
-                    <div className="wave" id="wave4"></div>
-                </div>
+                {/*<div className="banner--waves waves-top">
+                    
+                </div>*/}
             </div>
             {/* <div className="banner--waves waves-bottom">
                 <img src={wave1} alt="Banner waves" className="banner-wave-4" />
