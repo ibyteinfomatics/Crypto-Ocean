@@ -120,59 +120,6 @@ div#site__header {
     @apply bg--color--purple text--color--lightblue;
 }
 
-/* Banner styling */
-div#site__banner {
-    @apply mb-12;
-}
-.banner--dots-bg {
-    @apply absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 88%;
-}
-.banner--dots-bg img{
-    @apply mx-auto;
-}
-.banner-slider-images {
-  position: absolute;
-  top: -6rem;
-  right: 5rem;
-  width: 28rem;
-}
-.banner--waves {
-  position: absolute;
-  width: 100%;
-  height: 23rem;
-  bottom: 0;
-  z-index: 9999;
-  left: 0;
-  right: 0;
-}
-.site--banner--slider .banner--waves{
-    z-index: 0;
-}
-.banner--waves img{
-  position: absolute;
-  width: 100%;
-}
-img.banner-wave-1 {
-    bottom: 4rem;
-    height: 100%;
-}
-img.banner-wave-2 { 
-    bottom: 1rem;
-    height: 100%;
-}
-img.banner-wave-3 {
-    bottom: 0rem;
-    height: 100%;
-}
-img.banner-wave-4 {
-    z-index: 99999;
-    height: 100%;
-    bottom: 2rem;
-}
 .banner--wrapper{
     max-width: 61.5rem;
     z-index: 999;
@@ -471,6 +418,7 @@ div#site--footer {
 .icon-waves {
     position: absolute;
     top: 4rem;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -707,7 +655,7 @@ div#site--footer {
         z-index: 999;
     }
     div#site__banner__slider {
-        margin-top: -7rem;
+        margin-top: -14rem;
         margin-bottom: 10rem;
         overflow: hidden;
         position: relative;

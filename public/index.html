@@ -67,6 +67,69 @@
           }, 1500);
       });
   </script>
+  
+<script>
+  // window.onscroll = function() {
+  //   myFunction()
+  // };
+  // function myFunction() {
+  //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  //   var scrolled = (winScroll / height) * 100;
+  //   console.log(scrolled)
+  // }
+</script> 
+<script>
+//   $(function() {
+//     var header = $(".waves-top");
+//     var banSlide = $("#site__banner__slider .slider-img");
+//     $(window).scroll(function() {
+//         var scroll = $(window).scrollTop();
+
+//         if (scroll >= 200) {
+//             header.addClass("waves-top-animate");
+//             banSlide.addClass("slider--images-moving");
+//         } else {
+//             header.removeClass("waves-top-animate");
+//             banSlide.removeClass("slider--images-moving");
+//         }
+        
+//     });
+// });
+</script> 
+<script>
+//   $(function() {
+//     //caches a jQuery object containing the header element
+//     var header = $(".waves-bottom");
+//     $(window).scroll(function() {
+//         var scroll = $(window).scrollTop();
+
+//         if (scroll >= 400) {
+//             header.addClass("waves-bottom-animate");
+//         } else {
+//             header.removeClass("waves-bottom-animate");
+//         }
+        
+//     });
+// });
+</script>
+
+  <script>
+    var wave1 = document.getElementById('wave1');
+    var wave2 = document.getElementById('wave2');
+    var wave3 = document.getElementById('wave3');
+    var wave4 = document.getElementById('wave4');
+
+    window.addEventListener('scroll', function(){
+      var value = window.scrollY;
+
+      wave1.style.backgroundPositionX = 0 + value + 'rem';
+      wave2.style.backgroundPositionX = 10 + value + 'rem';
+      wave3.style.backgroundPositionX = 15 + value + 'rem';
+      wave4.style.backgroundPositionX = 25 + value + 'rem';
+    })
+  </script>
+
     <title>React App</title>
   </head>
   <body>
