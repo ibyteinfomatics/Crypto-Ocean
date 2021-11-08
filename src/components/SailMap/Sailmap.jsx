@@ -1,5 +1,6 @@
-// import React, {useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Sailmaplist from "./Sailmaplist";
+import $ from 'jquery';
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -7,10 +8,21 @@ const iconship = "./assets/images/icon-ship.png";
 const lightHouse = "./assets/images/light-house.png";
 const iconwaves = "./assets/images/waves.png";
 
+
 function Sailmap(){
-    // useEffect(() => {
-    //     Aos.init();
-    // }, []);
+    useEffect(() => {
+        $(window).on('load resize scroll', function() {
+            $(".icon--ship").each(function() {
+                var windowTop = $(window).scrollTop();
+                var elementTop = $(this).offset().top;
+                var leftPosition = windowTop - elementTop;
+                console.log(leftPosition);
+                  $(this)
+                    .find(".bg-move")
+                    .css({ left: leftPosition,position:"absolute" });
+              });
+        });
+    }, []);
     return(
         <>
         <div className="sailmap--top--images">
@@ -24,7 +36,7 @@ function Sailmap(){
                 <img src={lightHouse} alt="Light House" />
             </div>
             <div className="icon--ship desktop-view">
-                <img src={iconship} alt="Icon Ship" />
+                <img src={iconship} alt="Icon Ship" className="bg-move" />
             </div>
             <div className="light-house desktop-view">
                 <img src={lightHouse} alt="Light House" />
