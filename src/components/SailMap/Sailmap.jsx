@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Sailmaplist from "./Sailmaplist";
 import $ from 'jquery';
 // import Aos from 'aos';
@@ -10,24 +10,38 @@ const iconwaves = "./assets/images/waves.png";
 
 
 function Sailmap(){
+    const [waveClass, setWaveClass] = useState("wave1");
     useEffect(() => {
         $(window).on('load resize scroll', function() {
             $(".icon--ship").each(function() {
-                var windowTop = $(window).scrollTop();
-                var elementTop = $(this).offset().top;
-                var leftPosition = windowTop - elementTop;
-                console.log(leftPosition);
-                  $(this)
+                let windowTop = $(window).scrollTop();
+                let elementTop = $(this).offset().top;
+                let leftPosition = windowTop - elementTop;
+                
+                $(this)
                     .find(".bg-move")
                     .css({ left: leftPosition,position:"absolute" });
+
+                setWaveClass("wave-move");
               });
         });
+
+        let timer = null;
+        window.addEventListener('scroll', function() {
+            if(timer !== null) {
+                clearTimeout(timer);        
+            }
+            timer = setTimeout(function() {
+                  setWaveClass("");
+            }, 300);
+        }, false);
+
     }, []);
     return(
         <>
         <div className="sailmap--top--images">
             <div className="icon-waves">
-                <img src={iconwaves} alt="Waves" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true" />
+                <img src={iconwaves} alt="Waves" className={waveClass} />
             </div>
             <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true">
                 <img src={iconship} alt="Icon Ship" />

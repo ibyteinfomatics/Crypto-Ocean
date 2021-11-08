@@ -247,3 +247,16 @@ img.banner-wave-4 {
   animation-delay: 7s;
   bottom: 25%;
 }
+.wave-move{
+  animation: wave-animate 1s linear infinite;
+  animation-delay: calc(1 * 0.25s);
+}
+@keyframes wave-animate {
+  0%,100%{
+    transform: translateX(0rem);
+  }
+  50%{
+    transform: translateX(1rem);
+    left: -1rem;
+  }
+}
