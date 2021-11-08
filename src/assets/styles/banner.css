@@ -203,7 +203,7 @@ img.banner-wave-4 {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  animation: animate 4s linear infinite;
+  animation: animate 6s linear infinite;
   animation-delay: calc(var(--i) * 0.25s);
 }
 @keyframes animate

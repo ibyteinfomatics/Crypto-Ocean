@@ -260,10 +260,7 @@ p.banner--text {
     transform: scale(1.125);
 }
 .tune--button{
-    @apply absolute bottom-1 transition-all opacity-0;
-}
-.mint--block:hover + .tune--button{
-    @apply block opacity-100;
+    @apply -ml-12 -mb-12 transition-all;
 }
 
 /* Sailmap Wrapper */

@@ -1,5 +1,5 @@
 import Countdown from 'react-countdown';
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react';
 
 const Shark = "./assets/images/Shark.png";
 const MintButton = "./assets/images/mint-button.png";
@@ -36,6 +36,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 function Mintbox(){
+    const [show, setShow] = useState(false);
     return (
         <>
             <div className="wrapper box--wrapper mintbox--wrapper" data-aos="fade-in">
@@ -59,14 +60,16 @@ function Mintbox(){
                                 <h3>Counter</h3>
                             </div>
                             <div className="result">0.1 ETH</div>
-                            <div className="mint-button btn">
+                            <div className="mint-button btn" onClick={() => setShow(!show)}>
                                 <a href="javascript:void(0)"><img src={MintButton} alt="Mint Button" /></a>
                             </div>
                         </div>
                     </div>
-                    <div className="tune--button btn text-left">
+                    { show && 
+                    (<div className="tune--button btn text-left">
                         <a href="javascript:void(0)"><img src={StayTunedButton} alt="Stay Tuned Button" /></a>
-                    </div>
+                    </div>)
+                    }
                     {/* <div className="progress--bar-block">
                         <div className="progress--bar">
                             <div
