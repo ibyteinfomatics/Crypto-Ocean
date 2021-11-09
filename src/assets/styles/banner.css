@@ -12,7 +12,7 @@ div#site__banner__slider .slick-slider .slick-list {
 
 /* Banner styling */
 div#site__banner {
-  @apply mb-12;
+  margin-bottom: 3rem;
 }
 .banner-slider-images {
   position: absolute;
@@ -36,7 +36,7 @@ div#site__banner {
   background: url(images/wave-1.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100%;
+  /* background-size: 100%; */
   animation: animate 6s linear infinite;
   animation-delay: calc(var(--i) * 0.25s);
 }
@@ -55,7 +55,7 @@ div#site__banner {
   z-index: 1000;
   opacity: 1;
   background: url(images/wave-4-1.png);
-  /*background-position-x: 400px;*/
+  background-position-x: 400px;
   background-size: 100% 100%;
   /*animation-delay: 1s;*/
   bottom: -8%;

@@ -155,9 +155,12 @@ p.banner--text {
 .site--social--icons ul li:not(:last-child) {
     @apply mb-4;
 }
+.site--social--icons ul li a{
+    @apply w-12 block;
+}
 .artist--social--links li a img,
 .site--social--icons li a img{
-    @apply transition-transform duration-500;
+    @apply transition-transform duration-500 w-full;
 }
 .artist--social--links li a:hover img,
 .site--social--icons li a:hover img{
@@ -235,7 +238,10 @@ p.banner--text {
 }
 .block--img {
     max-width: 19rem;
-    @apply mx-auto;
+    @apply mx-auto w-full;
+}
+.mint-button img{
+    width: 7rem;
 }
 .box-highlight{
     text-shadow: var(--text--shadow);
@@ -313,7 +319,7 @@ span.list--month {
 
 /* Faqs Styling */
 .faqs--content .title{
-    @apply text--color--lightblue mb-5 pr-12 relative;
+    @apply text--color--lightblue mb-5 pr-20 relative;
 }
 .faqs--content .title img{
     @apply w-12 absolute right-0 -top-2;
@@ -370,7 +376,7 @@ div#site--footer {
 }
 .footer--wrapper {
     @apply relative mx-auto p-4 overflow-hidden;
-    max-width: 78.5625rem;
+    max-width: 95rem;
 }
 .footer--content {
     max-width: 22.1875rem;
@@ -415,14 +421,22 @@ div#site--footer {
     right: -3rem;
     width: 13rem;
 }
-
+.site__logo{
+    max-width: 12rem;
+    width: 100%;
+}
+.site__logo img{
+    width: 100%;
+}
 .icon-waves {
     position: absolute;
     top: 4rem;
     overflow: hidden;
     width: 100%;
 }
-
+.icon-waves img{
+    @apply w-full;
+}
 .profile-slider-cont{
     max-width: 37.625rem;
     @apply mx-auto w-full;
@@ -478,7 +492,7 @@ div#site--footer {
         @apply overflow-hidden;
     } */
     .icon-waves img{
-        @apply w-auto h-16;
+        @apply w-full h-16;
         /* max-width: inherit; */
     }
     .icon--ship{
@@ -520,7 +534,8 @@ div#site--footer {
         @apply w-8 block;
     }
     #site__content{
-        @apply px-4;
+        @apply px-4 mx-auto;
+        max-width: 40em;
     }
     .wrapper.box--wrapper{
         @apply px-3;
@@ -557,7 +572,9 @@ div#site--footer {
         @apply text-left text--color--pink;
     }
     .faqs--content .title img{
-        @apply top-2 w-20;
+        @apply w-16;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .faqs--content .title + p{
         @apply hidden;
@@ -681,6 +698,9 @@ div#site--footer {
     }
 }
 @media screen and (min-width: 72em){
+    html{
+        font-size: 1vw;
+    }
     .wrapper{
         @apply my-32;
     }
@@ -769,6 +789,9 @@ div#site--footer {
         /*animation-name: ship;
         animation-duration: 15s;  
         animation-fill-mode: forwards;*/
+    }
+    .footer--bg img{
+        width: 100%;
     }
 }
 @media screen and (min-width: 72em) and (max-width: 86em){

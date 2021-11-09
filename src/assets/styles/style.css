@@ -31453,7 +31453,13 @@ p.banner--text {
   margin-bottom: 1rem;
 }
 
+.site--social--icons ul li a{
+  display: block;
+  width: 3rem;
+}
+
 .artist--social--links li a img, .site--social--icons li a img {
+  width: 100%;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
@@ -31597,6 +31603,11 @@ p.banner--text {
   max-width: 19rem;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+.mint-button img{
+  width: 7rem;
 }
 
 .box-highlight{
@@ -31738,7 +31749,7 @@ span.list--month {
 
 .faqs--content .title{
   margin-bottom: 1.25rem;
-  padding-right: 3rem;
+  padding-right: 5rem;
   position: relative;
   color: var(--text--color--lightBlue);
 }
@@ -31847,7 +31858,7 @@ div#site--footer {
   overflow: hidden;
   padding: 1rem;
   position: relative;
-  max-width: 78.5625rem;
+  max-width: 95rem;
 }
 
 .footer--content {
@@ -31902,10 +31913,23 @@ div#site--footer {
   width: 13rem;
 }
 
+.site__logo{
+  max-width: 12rem;
+  width: 100%;
+}
+
+.site__logo img{
+  width: 100%;
+}
+
 .icon-waves {
   position: absolute;
   top: 4rem;
   overflow: hidden;
+  width: 100%;
+}
+
+.icon-waves img{
   width: 100%;
 }
 
@@ -32012,7 +32036,7 @@ div#site--footer {
 
   .icon-waves img{
     height: 4rem;
-    width: auto;
+    width: 100%;
     /* max-width: inherit; */
   }
 
@@ -32074,8 +32098,11 @@ div#site--footer {
   }
 
   #site__content{
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    max-width: 40em;
   }
 
   .wrapper.box--wrapper{
@@ -32141,8 +32168,10 @@ div#site--footer {
   }
 
   .faqs--content .title img{
-    top: 0.5rem;
-    width: 5rem;
+    width: 4rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .faqs--content .title + p{
@@ -32334,6 +32363,10 @@ div#site--footer {
 }
 
 @media screen and (min-width: 72em){
+  html{
+    font-size: 1vw;
+  }
+
   .wrapper{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -32508,6 +32541,10 @@ div#site--footer {
     /*animation-name: ship;
         animation-duration: 15s;  
         animation-fill-mode: forwards;*/
+  }
+
+  .footer--bg img{
+    width: 100%;
   }
 }
 
