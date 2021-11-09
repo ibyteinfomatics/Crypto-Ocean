@@ -67,7 +67,7 @@ function Mintbox(){
                     </div>
                     { show && 
                     (<div className="tune--button btn text-left">
-                        <a href="javascript:void(0)"><img src={StayTunedButton} alt="Stay Tuned Button" /></a>
+                        <img src={StayTunedButton} alt="Stay Tuned Button" />
                     </div>)
                     }
                     {/* <div className="progress--bar-block">
