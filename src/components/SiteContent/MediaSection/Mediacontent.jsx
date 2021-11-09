@@ -25,11 +25,11 @@ function Mediacontent(props){
                 Donation.addClass("media--text-animation");
             }
 
-            if (windowpos-250 >= EarnPosition.top) {
+            if (windowpos-500 >= EarnPosition.top) {
                 Earn.addClass("media--text-animation");
             }
 
-            if (windowpos+50 >= TeamPosition.top) {
+            if (windowpos-500 >= TeamPosition.top) {
                 Team.addClass("media--text-animation");
             }
         });
