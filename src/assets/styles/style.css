@@ -31446,6 +31446,7 @@ p.banner--text {
 .site--social--icons {
   position: absolute;
   right: 3rem;
+  z-index: 999999;
 }
 
 .site--social--icons ul li:not(:last-child) {
@@ -32021,7 +32022,7 @@ div#site--footer {
 
   .light-house{
     top: -4rem;
-    right: 4%;
+    /* right: 4%; */
   }
 
   .banner--wrapper{
@@ -32035,7 +32036,8 @@ div#site--footer {
   h3.banner--title{
     font-size: 1.5rem;
     line-height: 2rem;
-    text-align: center;
+    max-width: 20rem;
+    margin-left: 3.4rem;
   }
 
   h3.media--title.title{
@@ -32059,8 +32061,7 @@ div#site--footer {
 
   .site--social--icons{
     top: 10rem;
-    left: 1rem;
-    right: auto;
+    right: 1rem;
   }
 
   .site--social--icons ul li {
@@ -32301,11 +32302,19 @@ div#site--footer {
   }
 
   .tune--button{
-    right: 0.25rem;
+    margin-left: 0px;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
   }
 
   .sailmap--top--images .desktop-view{
     display: none;
+  }
+}
+
+@media screen and (max-width: 30em){
+  p.banner--text, .banner--btn, h3.banner--title{
+    margin-left: 1rem;
   }
 }
 
@@ -32371,12 +32380,6 @@ div#site--footer {
 
   .block-content-box {
     margin-left: 4.625rem;
-  }
-
-  .tune--button{
-    left: 0.25rem;
-    -webkit-transform: none;
-            transform: none;
   }
 
   .media--wrapper {

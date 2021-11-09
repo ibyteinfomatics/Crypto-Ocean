@@ -44,7 +44,7 @@ function Sailmap(){
                 <img src={iconwaves} alt="Waves" className={waveClass} />
             </div>
             <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true">
-                <img src={iconship} alt="Icon Ship" />
+                <img src={iconship} alt="Icon Ship" className="bg-move" />
             </div>
             <div className="light-house mobile--view" data-aos="slide-left" data-aos-duration="3000" data-aos-once="true">
                 <img src={lightHouse} alt="Light House" />

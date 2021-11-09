@@ -1,50 +1,3 @@
-
-/* #wave1{
-  opacity: 0.3
-}
-.ocean { 
-  height: 5%;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #0072C5;
-}
-  
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-} */
-  
-/* @keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-  
-@keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
-  }
-  50% {
-    transform: translate3d(0,5px,0);
-  }
-} */
-
 /* Banner Slick Slider Styling */
 div#site__banner__slider .slick-slider {
   max-width: 72rem;
@@ -57,135 +10,16 @@ div#site__banner__slider .slick-slider .slick-list {
   margin-left: auto;
 }
 
-/* .banner--waves.waves-top-animate img{
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  transform: translate(1400px);
-}
-.banner--waves.waves-top-animate img:nth-of-type(2){
-  top: -134px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  transform: translate(1400px);
-}
-.banner--waves.waves-top-animate img:nth-of-type(3){
-  top: -42px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-  transform: translate(1400px);
-}
-.banner--waves.waves-bottom-animate img{
-  top: -250px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  transform: translate(1400px);
-} */
-
-
 /* Banner styling */
 div#site__banner {
   @apply mb-12;
 }
-/* .banner--dots-bg {
-  @apply absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 88%;
-}
-.banner--dots-bg img{
-  @apply mx-auto;
-} */
 .banner-slider-images {
-position: absolute;
-top: -6rem;
-right: 5rem;
-width: 28rem;
-}
-/* .banner--waves {
-position: absolute;
-width: 100%;
-height: 23rem;
-bottom: 0;
-z-index: 9999;
-left: 0;
-right: 0;
-}
-.site--banner--slider .banner--waves{
-  z-index: 0;
-}
-.banner--waves img{
   position: absolute;
-  width: 100%;
+  top: -6rem;
+  right: 5rem;
+  width: 28rem;
 }
-
-img.banner-wave-1 {
-  bottom: 7rem;
-  height: 100%;
-  left: 0;
-  max-width: inherit;
-  transition: all ease .5s;
-}
-.banner--waves.waves-top-animate .banner-wave-1 {
-  width: 140%;
-  left: -20%;  
-  bottom: 4rem;
-}
-
-img.banner-wave-2 {
-  bottom: -1rem;
-  height: 100%;
-  left: 0;
-  max-width: inherit;
-  transition: all ease .5s;
-}
-.banner--waves.waves-top-animate .banner-wave-2 {
-  width: 200%;
-  right: -20%;
-  bottom: 1rem;
-}
-
-img.banner-wave-3 {
-  bottom: -2rem;
-  height: 100%;
-  left: 0;
-  max-width: inherit;
-  transition: all ease .5s;
-}
-.banner--waves.waves-top-animate .banner-wave-3 {
-  width: 200%;
-  bottom: 0;
-  left: -20%;
-}
-
-img.banner-wave-4 {
-  z-index: 99999;
-  height: 100%;
-  bottom: 0rem;
-  width: 110%;
-  max-width: inherit;
-  transition: all ease .5s;
-}
-.banner--waves.waves-bottom-animate .banner-wave-4 {
-  left: 0%;
-  bottom: 2rem;
-  width: 200%;
-}
-
-.slick-slide img{
-  transform: translateY(-2rem);
-  transition: .5s;
-}
-.slider-img.slider--images-moving img{
-  transform: none;
-} */
 
 .banner--waves.waves-top.waves-top-animate {
   position: absolute;
@@ -264,5 +98,22 @@ img.banner-wave-4 {
   50%{
     transform: translateX(1rem);
     left: -1rem;
+  }
+}
+
+@media screen and (max-width: 47.9875em){
+  div#site__banner__slider{
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 71.9875em){
+  div#site__banner__slider{
+    position: relative;
+  }
+  .banner--waves.waves-top {
+    position: absolute;
+    height: 25rem;
+    width: 100%;
+    bottom: 0;
   }
 }

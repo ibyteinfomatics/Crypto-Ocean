@@ -150,6 +150,7 @@ p.banner--text {
 }
 .site--social--icons {
     @apply absolute right-12;
+    z-index: 999999;
 }
 .site--social--icons ul li:not(:last-child) {
     @apply mb-4;
@@ -485,13 +486,15 @@ div#site--footer {
     }
     .light-house{
         top: -4rem;
-        right: 4%;
+        /* right: 4%; */
     }
     .banner--wrapper{
         @apply mx-auto px-4 mt-8;
     }
     h3.banner--title{
-        @apply text-2xl text-center;
+        @apply text-2xl;
+        max-width: 20rem;
+        margin-left: 3.4rem;
     }
     h3.media--title.title{
         @apply hidden;
@@ -508,7 +511,7 @@ div#site--footer {
     }
     .site--social--icons{
         top: 10rem;
-        @apply left-4 right-auto;
+        @apply right-4;
     }
     .site--social--icons ul li {
         @apply mb-3;
@@ -653,10 +656,15 @@ div#site--footer {
         min-height: 24rem;
     }
     .tune--button{
-        @apply right-1;
+        @apply -mb-12 mt-4 ml-0;
     }
     .sailmap--top--images .desktop-view{
         @apply hidden;
+    }
+}
+@media screen and (max-width: 30em){
+    p.banner--text, .banner--btn, h3.banner--title{
+        @apply ml-4;
     }
 }
 @media screen and (min-width: 48em){
@@ -701,9 +709,6 @@ div#site--footer {
     }
     .block-content-box {
         margin-left: 4.625rem;
-    }
-    .tune--button{
-        @apply left-1 transform-none;
     }
     .media--wrapper {
         @apply items-center flex text-left;
