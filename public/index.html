@@ -32,8 +32,6 @@
                   $('.slider-single').eq(2).removeClass('proactive');
                   $('.slider-single').eq(2).addClass('proactive');
   
-                  console.log('first')
-  
               } else if (new RegExp("\\b" + "active" + "\\b").test(second)) {
                   $('.slider-single').eq(1).removeClass('active');
                   $('.slider-single').eq(1).removeClass('proactive');
@@ -46,9 +44,7 @@
                   $('.slider-single').eq(0).removeClass('preactive');
                   $('.slider-single').eq(0).removeClass('proactive');
                   $('.slider-single').eq(0).addClass('proactive');
-  
-                  console.log('second')
-  
+                  
               } else if (new RegExp("\\b" + "active" + "\\b").test(third)) {
                   $('.slider-single').eq(2).removeClass('active');
                   $('.slider-single').eq(2).removeClass('proactive');
@@ -61,75 +57,13 @@
                   $('.slider-single').eq(1).removeClass('preactive');
                   $('.slider-single').eq(1).removeClass('proactive');
                   $('.slider-single').eq(1).addClass('proactive');
-                  console.log('third')
+                  
               }
   
           }, 1500);
       });
   </script>
-  
-<script>
-  // window.onscroll = function() {
-  //   myFunction()
-  // };
-  // function myFunction() {
-  //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  //   var scrolled = (winScroll / height) * 100;
-  //   console.log(scrolled)
-  // }
-</script> 
-<script>
-//   $(function() {
-//     var header = $(".waves-top");
-//     var banSlide = $("#site__banner__slider .slider-img");
-//     $(window).scroll(function() {
-//         var scroll = $(window).scrollTop();
-
-//         if (scroll >= 200) {
-//             header.addClass("waves-top-animate");
-//             banSlide.addClass("slider--images-moving");
-//         } else {
-//             header.removeClass("waves-top-animate");
-//             banSlide.removeClass("slider--images-moving");
-//         }
-        
-//     });
-// });
-</script> 
-<script>
-//   $(function() {
-//     //caches a jQuery object containing the header element
-//     var header = $(".waves-bottom");
-//     $(window).scroll(function() {
-//         var scroll = $(window).scrollTop();
-
-//         if (scroll >= 400) {
-//             header.addClass("waves-bottom-animate");
-//         } else {
-//             header.removeClass("waves-bottom-animate");
-//         }
-        
-//     });
-// });
-</script>
-
-<script type="text/javascript">
-  let wave1 = document.getElementById('wave1');
-  let wave2 = document.getElementById('wave2');
-  let wave3 = document.getElementById('wave3');
-  let wave4 = document.getElementById('wave4');
-
-    window.addEventListener('scroll', function(){
-        let value = window.scrollY;
-        wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
-        wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
-        wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
-        wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
-    });
-</script>
-
-    <title>React App</title>
+    <title>CryptOcean</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
