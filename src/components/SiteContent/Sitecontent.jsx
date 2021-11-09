@@ -23,6 +23,7 @@ function Sitecontent(){
                     title="The Story" 
                     introText="CryptOcean is the Underwater Ecosystem for Rare NFT art." 
                     mediaText="Our metaverse is growing every month, with limited edition ocean creatures, created by 3D artists. All NFT creatures can be used in our play to earn game, going live on cryptocean.game in 2022."
+                    id="Story"                    
                 />
             </div>
             <div className="media--section section--alignment-right" id="donation">
@@ -33,6 +34,7 @@ function Sitecontent(){
                     introText="The Metaverse is Protecting The Universe." 
                     mediaText="Our ocean's marine life is racing extinction, unless we turn the tide urgently. The Oceanic Preservation Society collaborate with award-winning producers to create educational films that expose this extensive global threat."
                     mediaText2="Our donations to OPS are dedicated to sponsoring these films. Our featured tagline 'Stop killing them, start minting instead' highlights awareness and gives us a way to support the planet, whilst investing in NFT."
+                    id="Donation"
                 />
             </div>
             <div className="Sailmap" id="sailmap">
@@ -51,6 +53,7 @@ function Sitecontent(){
                     introText="" 
                     mediaText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
                     mediaText2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
+                    id="Earn"
                 />
             </div>
             <div className="media--section section--alignment-left" id="team">
@@ -61,6 +64,7 @@ function Sitecontent(){
                     introText="" 
                     mediaText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
                     mediaText2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
+                    id="Team"
                 />
             </div>
             <div className="artist--list">
