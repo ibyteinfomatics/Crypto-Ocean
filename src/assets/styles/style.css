@@ -31927,6 +31927,38 @@ div#site--footer {
   top: 4rem;
   overflow: hidden;
   width: 100%;
+  -webkit-animation: waveani 4s linear infinite;
+          animation: waveani 4s linear infinite;
+}
+
+@-webkit-keyframes waveani
+{
+  0%,100%
+    {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  50%
+    {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes waveani
+{
+  0%,100%
+    {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  50%
+    {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 .icon-waves img{
