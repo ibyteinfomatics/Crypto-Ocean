@@ -32592,6 +32592,50 @@ div#site--footer {
   }
 }
 
+@media screen and (max-width: 71.99rem){
+  .media--content {
+    opacity: 0;
+  }
+
+  .media--text-animation {
+    -webkit-animation: media 2s linear;
+            animation: media 2s linear;
+    opacity: 1;
+  }
+
+  @-webkit-keyframes media {
+    0%
+    {
+      -webkit-transform: translateY(20rem);
+              transform: translateY(20rem);
+      opacity: 0;
+    }
+
+    50%
+    {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes media {
+    0%
+    {
+      -webkit-transform: translateY(20rem);
+              transform: translateY(20rem);
+      opacity: 0;
+    }
+
+    50%
+    {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

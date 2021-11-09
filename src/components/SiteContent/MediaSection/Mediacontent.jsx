@@ -42,7 +42,7 @@ function Mediacontent(props){
             <div className="media--item" data-aos="fade-down" data-aos-duration="1000">
                 <img src={props.imgSrc} alt={props.imgAlt} />
             </div>
-            <div className="media--content" data-aos="fade-up" data-aos-duration="5000000" id={props.id}>
+            <div className="media--content" id={props.id}>
                 <h3 className="media--title title">{props.title}</h3>
                 <div className="media--text">
                     <p className="media--highlight">{props.introText}</p>
