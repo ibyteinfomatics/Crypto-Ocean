@@ -175,6 +175,9 @@ p.banner--text {
     @apply w-full mx-auto;
     max-width: 23.75rem;
 }
+.media--item img{
+    @apply w-full;
+}
 .media--text{
     @apply mt-4; 
 }
@@ -239,6 +242,9 @@ p.banner--text {
 .block--img {
     max-width: 19rem;
     @apply mx-auto w-full;
+}
+.block--img img{
+    @apply w-full;
 }
 .mint-button img{
     width: 7rem;
@@ -421,6 +427,9 @@ div#site--footer {
     right: -3rem;
     width: 13rem;
 }
+.light-house img{
+    @apply w-full;
+}
 .site__logo{
     max-width: 12rem;
     width: 100%;
@@ -471,9 +480,10 @@ div#site--footer {
 }
 .artist--list li:hover .artist--img img{
     transition: transform .5s;
+    @apply w-full rounded-full;
 }
 .artist--list li:hover .artist--img img{
-    /* transform: scale(1.25); */
+    transform: scale(1.25);
 }
 .progress--bar-block{
     @apply mt-20 relative;
@@ -609,7 +619,28 @@ div#site--footer {
         @apply absolute left-0 right-0;
     }
     .media--item img{
-        @apply mx-auto opacity-30;        
+        @apply mx-auto;        
+    }
+    
+    .media--content {
+        opacity: 0;
+    }
+    .media--text-animation .media--item img{
+        opacity: 0.3;
+    }
+    .media--text-animation .media--content{
+        animation: media .7s linear;
+        opacity: 1;
+    }
+    @keyframes media {
+        0%{
+            transform: translateY(20rem);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     .site__connect-buton a{
         @apply text-base py-2.5 inline-block whitespace-nowrap;
@@ -748,6 +779,23 @@ div#site--footer {
     .media--item {
         @apply mr-12;
     }
+    .media--content {
+        opacity: 0;
+    }
+    .media--text-animation .media--content {
+        opacity: 1;
+        animation: media .5s linear;
+    }
+    @keyframes media {
+        0%{
+            transform: translateY(20rem);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
     .section--alignment-right .media--wrapper {
         @apply flex-row-reverse;
     }
@@ -775,7 +823,8 @@ div#site--footer {
         @apply flex items-center mt-36;
     }
     .wrapper.sailmap--wrapper{
-        @apply mt-60;
+        @apply mt-60 overflow-y-auto;
+        max-height: 43rem;
     }
     .sailmap--top--images {
         position: absolute;
@@ -814,27 +863,5 @@ div#site--footer {
 @media screen and (min-width: 121em){
     html{
         font-size: 1vw;
-    }
-}
-
-@media screen and (max-width: 71.99rem){
-    .media--content {
-        opacity: 0;
-    }
-    .media--text-animation {
-        animation: media 2s linear;
-        opacity: 1;
-    }
-    @keyframes media {
-        0%
-    {
-        transform: translateY(20rem);
-        opacity: 0;
-    }
-    100%
-    {
-        transform: translateY(0);
-        opacity: 1;
-    }
     }
 }
