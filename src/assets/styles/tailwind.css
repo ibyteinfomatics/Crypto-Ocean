@@ -412,10 +412,8 @@ div#site--footer {
 } */
 .icon--ship {
     position: absolute;
-    /* left: -2.5rem; */
     top: 0;
     width: 10rem;
-    right: 3rem;
     /* animation-name: ship;
     animation-duration: 15s;  
     animation-fill-mode: forwards; */
@@ -517,9 +515,7 @@ div#site--footer {
         @apply w-full h-16;
         /* max-width: inherit; */
     }
-    .icon--ship{
-        right: 23%;
-    }
+    
     .light-house{
         top: -4rem;
         /* right: 4%; */
@@ -843,7 +839,7 @@ div#site--footer {
     }
     .icon--ship {
         position: absolute;
-        /* left: -2.5rem; */
+        left: -3rem;
         top: 0;
         width: 10rem;
         /* right: 3rem; */
