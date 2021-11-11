@@ -838,13 +838,14 @@ div#site--footer {
     }
     .wrapper .wrapper {
         margin: 0;
+        background: none;
     }    
     .wrapper.box--wrapper.test--wrap {
         padding: 0.25rem 0;
         background: var(--bg--dark--purple);
     }
     .wrapper.sailmap--wrapper{
-        @apply mt-60 overflow-y-auto;
+        @apply overflow-y-auto;
     }
     .wrapper.sailmap--wrapper::-webkit-scrollbar {
       width: 4px;

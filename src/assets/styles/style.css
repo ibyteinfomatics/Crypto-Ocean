@@ -32631,6 +32631,7 @@ div#site--footer {
 
   .wrapper .wrapper {
     margin: 0;
+    background: none;
   }
 
   .wrapper.box--wrapper.test--wrap {
@@ -32639,7 +32640,6 @@ div#site--footer {
   }
 
   .wrapper.sailmap--wrapper{
-    margin-top: 15rem;
     overflow-y: auto;
   }
 
