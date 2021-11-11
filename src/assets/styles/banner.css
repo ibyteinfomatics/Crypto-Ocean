@@ -20,7 +20,9 @@ div#site__banner {
   right: 5rem;
   width: 28rem;
 }
-
+.slick-slide img{
+  width: 100%;
+}
 .banner--waves.waves-top.waves-top-animate {
   position: absolute;
   height: 20rem;
@@ -115,5 +117,21 @@ div#site__banner {
     height: 25rem;
     width: 100%;
     bottom: 0;
+  }
+  .wave#wave1{
+    background: url(images/wave-4-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave2{
+    background: url(images/wave-3-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave3{
+    background: url(images/wave-2-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave4{
+    background: url(images/wave-1-1.png);
+    background-size: auto 120%;
   }
 }

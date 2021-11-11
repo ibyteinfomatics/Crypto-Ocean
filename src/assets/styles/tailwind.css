@@ -175,9 +175,6 @@ p.banner--text {
     @apply w-full mx-auto;
     max-width: 23.75rem;
 }
-.media--item img{
-    @apply w-full;
-}
 .media--text{
     @apply mt-4; 
 }
@@ -278,7 +275,8 @@ p.banner--text {
 
 /* Sailmap Wrapper */
 .wrapper.sailmap--wrapper{
-    @apply py-10 px-20 bg--dark--purple overflow-hidden;
+    @apply py-10 px-20 bg--dark--purple overflow-x-hidden overflow-y-auto;
+    max-height: 43rem;
 }
 .sailmap--wrapper h2{
     @apply text--color--lightblue;
@@ -476,11 +474,15 @@ div#site--footer {
     border: 2px solid #ffffff96;
     box-shadow: 0 0 6px #fff9;
 }
-.artist--list li:hover .artist--img img{
-    transition: transform .5s;
+.artist--list li .artist--img img{
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     @apply w-full rounded-full;
 }
 .artist--list li:hover .artist--img img{
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
 }
 .progress--bar-block{
@@ -511,11 +513,17 @@ div#site--footer {
     /* .sailmap--top--images{
         @apply overflow-hidden;
     } */
+    .Sailmap{
+        @apply pt-24;
+    }
     .icon-waves img{
         @apply w-full h-16;
         /* max-width: inherit; */
     }
-    
+    .icon--ship{
+        left: -2rem;
+        margin-left: -1rem;
+    }
     .light-house{
         top: -4rem;
         /* right: 4%; */
@@ -570,8 +578,15 @@ div#site--footer {
     .title{
         font-size: 2.25rem;
     }
+    .wrapper.box--wrapper.test--wrap{
+        border: none;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+    }
     .wrapper.sailmap--wrapper{
-        @apply px-0 pb-0 pt-40 border-0 bg-transparent;
+        @apply p-0 border-0 bg-transparent mt-0;
+        max-height: 48rem;
     }
     .sailmap--list > ul > li {
         @apply px-5 relative mt-20;
@@ -775,6 +790,9 @@ div#site--footer {
     .media--item {
         @apply mr-12;
     }
+    .media--item img{
+        @apply w-full;
+    }
     .media--content {
         opacity: 0;
     }
@@ -818,9 +836,24 @@ div#site--footer {
         max-width: 71.375rem;
         @apply flex items-center mt-36;
     }
+    .wrapper .wrapper {
+        margin: 0;
+    }    
+    .wrapper.box--wrapper.test--wrap {
+        padding: 0.25rem 0;
+        background: var(--bg--dark--purple);
+    }
     .wrapper.sailmap--wrapper{
         @apply mt-60 overflow-y-auto;
-        max-height: 43rem;
+    }
+    .wrapper.sailmap--wrapper::-webkit-scrollbar {
+      width: 4px;
+      background-clip: padding-box;
+    }
+    .wrapper.sailmap--wrapper::-webkit-scrollbar-thumb {
+      background: var(--bg--lightblue);
+      border: 0px solid transparent;
+      border-radius: 1rem;
     }
     .sailmap--top--images {
         position: absolute;

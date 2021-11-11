@@ -43,20 +43,21 @@ function Sailmap(){
             <div className="icon-waves">
                 <img src={iconwaves} alt="Waves" />
             </div>
-            <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true">
+            {/* <div className="icon--ship mobile--view" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true">
                 <img src={iconship} alt="Icon Ship" className="bg-move" id="sailship" />
             </div>
             <div className="light-house mobile--view" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
                 <img src={lightHouse} alt="Light House" />
-            </div>
-            <div className="icon--ship desktop-view">
+            </div> */}
+            <div className="icon--ship">
                 <img src={iconship} alt="Icon Ship" className="bg-move" />
             </div>
-            <div className="light-house desktop-view">
+            <div className="light-house">
                 <img src={lightHouse} alt="Light House" />
             </div>
         </div>
-        <div className="section--wrapper wrapper box--wrapper sailmap--wrapper" id="scrollBar">
+        <div className="wrapper box--wrapper test--wrap">
+        <div className="section--wrapper wrapper sailmap--wrapper" id="scrollBar">
             <div className="box-content text-center">
                 <h2 className="title">Sail Map</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMa</p>
@@ -161,6 +162,7 @@ function Sailmap(){
                     />
                 </ul>
             </div>
+        </div>
         </div>
         
         <div className="btn discord--button" data-aos="fade-down" data-aos-duration="1000">

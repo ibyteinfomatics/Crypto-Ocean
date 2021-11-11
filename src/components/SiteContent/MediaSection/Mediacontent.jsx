@@ -16,7 +16,7 @@ function Mediacontent(props){
         let TeamPosition = Team.position();
 
         $(window).scroll(function() {
-            var windowpos = $(window).scrollTop()-650;
+            var windowpos = $(window).scrollTop()-400;
             if (windowpos >= StoryPosition.top) {
                 Story.addClass("media--text-animation");
             }
@@ -29,7 +29,7 @@ function Mediacontent(props){
                 Earn.addClass("media--text-animation");
             }
 
-            if (windowpos-250 >= TeamPosition.top) {
+            if (windowpos-400 >= TeamPosition.top) {
                 Team.addClass("media--text-animation");
             }
         });
