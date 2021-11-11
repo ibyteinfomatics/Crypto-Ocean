@@ -111,7 +111,54 @@ function Sailmap(){
                         listMonth = "Jun"
                         listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
-                    
+                    <Sailmaplist  
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "July"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
+                    <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "Augs"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
+                    <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "Sept"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
+                    <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "Oct"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
+                    <Sailmaplist  
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "Nov"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
+                    <Sailmaplist 
+                        fadeAni= "slide-left"
+                        fadeDur= "1000"
+                        efftrept="true"
+                        listYear = "2021"
+                        listMonth = "Dec"
+                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                    />
                 </ul>
             </div>
         </div>
