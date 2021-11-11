@@ -403,6 +403,7 @@ div#site--footer {
 
 .Sailmap{
     position: relative;
+    margin-top: 17rem;
 }
 /* @keyframes ship {
     from {left: -2.5rem;}
@@ -514,7 +515,7 @@ div#site--footer {
         @apply overflow-hidden;
     } */
     .Sailmap{
-        @apply pt-24;
+        @apply pt-24 mt-12;
     }
     .icon-waves img{
         @apply w-full h-16;

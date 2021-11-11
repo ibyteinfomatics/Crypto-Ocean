@@ -31894,6 +31894,7 @@ div#site--footer {
 
 .Sailmap{
   position: relative;
+  margin-top: 17rem;
 }
 
 /* @keyframes ship {
@@ -32076,6 +32077,7 @@ div#site--footer {
     } */
 
   .Sailmap{
+    margin-top: 3rem;
     padding-top: 6rem;
   }
 
