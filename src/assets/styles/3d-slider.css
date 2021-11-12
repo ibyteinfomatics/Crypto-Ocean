@@ -3,6 +3,9 @@
     max-width: 18rem;
     /* margin-top: -1.5rem; */
 }
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+    width: 100%;
+}
 .react-3d-carousel .slider-container .slider-content .slider-single.proactive{
     margin-left: 43%;
 }

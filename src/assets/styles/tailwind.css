@@ -102,19 +102,19 @@ a, button, input[type="submit"], input[type="reset"], input[type="button"]{
 div#site__header {
     @apply sticky mx-auto inset-x-0 top-0 px-12;
     z-index: 9999999;
-    background: var(--bg--header--gradiant);
+    background: #0b0f28;
 }
 .site__navigation li{
     @apply mx-4;
 }
 .site__navigation li a{
-    @apply text-lg;
+    @apply text-base;
 }
 .site__navigation li a:hover{
     @apply text--color--lightblue;
 }
 .site__connect-buton a{
-    @apply bg--lightblue py-2.5 px-4 rounded-xl text-base font-medium text--color--purple;
+    @apply bg--lightblue py-1.5 px-4 block rounded-xl text-sm font-medium text--color--purple;
 }
 .site__connect-buton a:hover{
     @apply bg--color--purple text--color--lightblue;
@@ -428,7 +428,7 @@ div#site--footer {
     @apply w-full;
 }
 .site__logo{
-    max-width: 12rem;
+    max-width: 14rem;
     width: 100%;
 }
 .site__logo img{
@@ -470,6 +470,7 @@ div#site--footer {
     transition: box-shadow .5s, border .5s;
     overflow: hidden;
     border-radius: 100%;
+    width: 8.125rem;
 }
 .artist--list li:hover .artist--img {
     border: 2px solid #ffffff96;
@@ -510,6 +511,9 @@ div#site--footer {
     }
     .site__navigation{
         @apply hidden;
+    }
+    .nav-menu .site__logo{
+        @apply mx-auto;
     }
     /* .sailmap--top--images{
         @apply overflow-hidden;
@@ -655,7 +659,7 @@ div#site--footer {
         }
     }
     .site__connect-buton a{
-        @apply text-base py-2.5 inline-block whitespace-nowrap;
+        @apply text-base py-1.5 inline-block whitespace-nowrap block;
     }
     .artist--list > ul{
         @apply block whitespace-nowrap overflow-x-auto;
@@ -708,7 +712,7 @@ div#site--footer {
         @apply hidden;
     }
     .toggle--menu span.active .close--icon{
-        @apply flex bg--lightblue text--color--purple rounded-full leading-none w-8 h-8 text-xl font-semibold justify-center items-center;
+        @apply flex bg--lightblue text--color--purple fixed top-4 right-4 rounded-full leading-none w-8 h-8 text-xl font-semibold justify-center items-center;
     }
     .nav-menu .site__logo img{
         @apply w-40 mx-auto;
@@ -828,7 +832,7 @@ div#site--footer {
         @apply w-0.5 bg--lightblue h-12 absolute right-0 top-1/2 transform -translate-y-1/2;
     }
     .faqs--wrapper.wrapper{
-        @apply px-20;
+        @apply px-20 flex items-center flex-col;
     }
     .footer--wrapper {
         @apply flex justify-between items-center;

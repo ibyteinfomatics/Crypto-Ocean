@@ -1,5 +1,6 @@
 const instImg = './assets/images/insta-link.png';
-const driveImg = './assets/images/drive-link.png';
+// const driveImg = './assets/images/drive-link.png';
+const linkImg = './assets/images/link-icon.png';
 const twtrImg = './assets/images/twtr-link.png';
 
 function ArtistsList(props){
@@ -20,7 +21,7 @@ function ArtistsList(props){
                         </li>
                         <li className="drive--link">
                             <a href={props.driveLink}>
-                                <img src={driveImg} alt="Drive" />
+                                <img src={linkImg} alt="Linkdine" />
                             </a>
                         </li>
                         <li className="twtr--link">
