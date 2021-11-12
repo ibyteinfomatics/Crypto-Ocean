@@ -15,7 +15,7 @@ function Sailmap(){
 
         $(".sailmap--wrapper").scroll(function() { 
             let element = document.getElementById("scrollBar"); 
-            let width = element.scrollWidth-80;
+            let width = element.scrollWidth-$(".bg-move").width();
             let moveForward = $(".sailmap--wrapper").scrollTop();
             
             let height = element.clientHeight;
