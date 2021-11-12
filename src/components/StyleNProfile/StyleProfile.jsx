@@ -8,7 +8,7 @@ function ProfileStyleData(){
         window.addEventListener("orientationchange", function() {
             if(window.screen.orientation.angle == 90){
                 $(".profilin")
-                    .css({ marginTop: "15%" }); 
+                    .css({ marginTop: "35%" }); 
             }else{
                 $(".profilin")
                     .css({ marginTop: "3rem" });
