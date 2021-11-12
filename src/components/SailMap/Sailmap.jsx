@@ -24,13 +24,7 @@ function Sailmap(){
             let percentage = Math.floor(scrollTop / scrollHeight * 100);
 
             let leftPosition = (width * percentage)/100;
-
-            // console.log("width",width);
-            // console.log("moveForward",moveForward);
-            // console.log("total height",scrollHeight);
-            // console.log("percentage",percentage);
-            // console.log("leftPosition",leftPosition);
-
+            
             $(".icon--ship")
                     .find(".bg-move")
                     .css({ left: leftPosition,position:"absolute" });   
