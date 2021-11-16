@@ -10,88 +10,44 @@ function Artists(){
     return(
         <>
             <div className="section--wrapper wrapper artist--wrapper" data-aos="fade-up" data-aos-duration="1000">
-                <h3 className="title">Guest Artists</h3>
+                <h3 className="title">Artists</h3>
                 <div className="artist--list">
                     <ul>
                         <ArtistsList 
                             imgSrc = {artist1}
-                            artistName = "Metatim"
+                            artistName = "Serhat Yucekaya"
                             link = "javascript:void(0)"
+                            twtrLink = "https://twitter.com/YucekayaSerhat"
                             insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
+                            artLink = "javascript:void(0)"
+                            linkdineLink = "javascript:void(0)"
                         />
                         <ArtistsList 
                             imgSrc = {artist2}
-                            artistName = "Metatim"
+                            artistName = "Darina Evstigneeva"
                             link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
+                            insLink = "https://www.instagram.com/dasha_eva_art/"
+                            artLink = "https://www.artstation.com/dasha_eva"
                             twtrLink = "javascript:void(0)"
+                            linkdineLink = "javascript:void(0)"
                         />
                         <ArtistsList 
                             imgSrc = {artist3}
-                            artistName = "Metatim"
+                            artistName = "Diana"
                             link = "javascript:void(0)"
                             insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
+                            artLink = "https://www.artstation.com/diomiji"
                             twtrLink = "javascript:void(0)"
+                            linkdineLink = "javascript:void(0)"
                         />
                         <ArtistsList 
                             imgSrc = {artist4}
-                            artistName = "Metatim"
+                            artistName = "Amir Hossein"
                             link = "javascript:void(0)"
                             insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
+                            artLink = "https://www.artstation.com/elvin0513"
                             twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist5}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist6}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist1}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist2}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist3}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
-                        />
-                        <ArtistsList 
-                            imgSrc = {artist4}
-                            artistName = "Metatim"
-                            link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
-                            driveLink = "javascript:void(0)"
-                            twtrLink = "javascript:void(0)"
+                            linkdineLink = "javascript:void(0)"
                         />
                     </ul>
                 </div>

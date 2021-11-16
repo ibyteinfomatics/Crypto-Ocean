@@ -5,13 +5,13 @@ const hamburger = "./assets/images/hamburger-icon.png";
 const menuNav  = 
     <ul>
         <li>
-            <a href="#mintbox">Mintbox</a>
+            <a href="#mintbox">Minting</a>
         </li>
         <li>
-            <a href="#about">About</a>
+            <a href="#about">Story</a>
         </li>
         <li>
-            <a href="#donation">Donation</a>
+            <a href="#donation">Exposure</a>
         </li>
         <li>
             <a href="#sailmap">Sail Map</a>
@@ -20,13 +20,10 @@ const menuNav  =
             <a href="#team">Team</a>
         </li>
         <li>
-            <a href="#playearn">Play To Earn</a>
+            <a href="#playearn">$caviar</a>
         </li>
         <li>
             <a href="#faqs">FAQ</a>
-        </li>
-        <li>
-            <a href="#contact">Contact us</a>
         </li>
     </ul>;
 

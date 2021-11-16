@@ -23,9 +23,13 @@ function ProfileStyleData(){
                 <ProfileSlider />
             </div>
             <div className="profile-slider-data profilin" data-aos="fade-up">
-                <h3 className="title">Stlin' & Profilin'</h3>
-                <p>Stylin' & Profilin'<br />
-                Personalize your Cryptoys with exclusive accessories and clothing to make your Cryptoys more unique. Each item is an NFT you can buy, sell, and trade with others in the Cryptoyverse.</p>
+                <h3 className="title">Mermaid Collection</h3>
+                <p>11,111 mermaids are living in CryptOcean, all created in 4K resolution, with individual personalities and traits.</p>
+                <ul>
+                    <li>The original sisters gang is made up of 6,000 mermaids who were the first to enter CryptOcean and form the underwater metaverse.</li>
+                    <li>2,111 mermaids have been created by the ocean gods with neon light and luminous skin, making them the Queens of CryptOcean.</li>
+                    <li>The mermen are the Kings of CryptOcean, with 3000 in existence.</li>
+                </ul>
             </div>
         </>
     )

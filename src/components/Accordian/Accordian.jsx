@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import AccordionData from './api';
 import AccordianList from './AccordianList';
 import './accordian.css';
-const questMark = './assets/images/quest-mark.png';
+const questMark = './assets/images/quest-mark.gif';
 
 const Faqs = () => {
     const [data, setData] = useState(AccordionData);

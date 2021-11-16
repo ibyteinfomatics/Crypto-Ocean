@@ -16,15 +16,15 @@ function Footer(){
                             <img src={footerlogo} alt="Footer Logo" />
                         </a>
                     </div>
-                    <p><span>Join The Ocean</span>
-                    Don't miss out on our limited collection of Magic Staffs</p>
+                    <p><span>Deep Dive Into CryptOcean</span>
+                    The First Ocean Based Metaverse</p>
                 </div>
                 <div className="site--social--icons">
                     <Socialicons />
                 </div>
             </div>
             <div className="footer--bottom">
-                <p>All Right Reserved 2021 @Ocean.org</p>
+                <p>All Right Reserved 2021 @CryptOcean.art</p>
             </div>
         </div>
     )

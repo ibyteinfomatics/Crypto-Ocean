@@ -31,10 +31,10 @@ function Sitebanner(){
             </div>
             <div className="banner--wrapper">
                 <div className="banner--content" data-aos="fade-up">
-                    <h3 className="banner--title">CryptOcean Metaverse</h3>
-                    <p className="banner--text">The one stop shop for 3D NFT art. With $Squid token airdrops for all holders, plus a play to earn game launching in the roadmap, CryptOcean is the ultimate NFT experience.</p>
+                    <h3 className="banner--title">CryptOcean #Metaverse</h3>
+                    <p className="banner--text">CryptOcean is the first ocean based metaverse where virtual ocean creatures are minted, documentary films are produced and NFT holders are rewarded.</p>
                     <div className="banner--btn">
-                        <a href="javascript:void(0)">Join Discord</a>
+                        <a href="https://discord.gg/cryptoceanart">Join Discord</a>
                     </div>
                 </div>
             </div>

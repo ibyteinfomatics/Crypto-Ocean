@@ -8,21 +8,26 @@ import ProfileStyleData from "../StyleNProfile/StyleProfile";
 const Story ="./assets/images/story_img.png";
 const Donation ="./assets/images/donation_img.png";
 const PlayEarn ="./assets/images/playearn_img.png";
-const Team ="./assets/images/team_img.png";
-
+const Team ="./assets/images/team_img.gif";
+/*
+<div id="mintbox" className="mintbox">
+                <Mintbox />
+            </div>
+*/
 function Sitecontent(){
     return(
         <>
-            <div id="mintbox" className="mintbox">
+            {/* <div id="mintbox" className="mintbox">
                 <Mintbox />
-            </div>
-            <div className="media--section section--alignment-left" id="about">
+            </div> */}
+            <div className="media--section section--alignment-left" id="about">                
                 <Mediacontent 
                     imgSrc={Story} 
                     imgAlt="Image-1"
                     title="The Story" 
                     introText="CryptOcean is the Underwater Ecosystem for Rare NFT art." 
-                    mediaText="Our metaverse is growing every month, with limited edition ocean creatures, created by 3D artists. All NFT creatures can be used in our play to earn game, going live on cryptocean.game in 2022."
+                    mediaText="CryptOcean's mission is to raise awareness for the protection of our Oceans through marine-based NFT art. Our first collection features mermaids, with unique variations of this mythical sea creature."
+                    mediaText2="The ecosystem will continue to grow, with new collections and collaborations, as well as $CAVIAR launch, our staking rewards token for CryptOcean holders, all planned for 2022."
                     id="Story"                    
                 />
             </div>
@@ -30,14 +35,15 @@ function Sitecontent(){
                 <Mediacontent 
                     imgSrc={Donation} 
                     imgAlt="Image-2"
-                    title="Donations" 
+                    title="Film Production" 
                     introText="The Metaverse is Protecting The Universe." 
-                    mediaText="Our ocean's marine life is racing extinction, unless we turn the tide urgently. The Oceanic Preservation Society collaborate with award-winning producers to create educational films that expose this extensive global threat."
-                    mediaText2="Our donations to OPS are dedicated to sponsoring these films. Our featured tagline 'Stop killing them, start minting instead' highlights awareness and gives us a way to support the planet, whilst investing in NFT."
+                    mediaText="Marine life is racing extinction, unless we turn the tide urgently. We sponsor companies focused on ocean conservation to create educational films that expose this extensive global threat."
+                    mediaText2="Our featured tagline 'Stop Killing Them, Start Minting Instead' raises awareness of our mission to protect the planet, whilst investing in NFT. Bringing the universe and the metaverse together attracts new investors to CryptOcean and the NFT space. "
                     id="Donation"
                 />
             </div>
             <div className="Sailmap" id="sailmap">
+                <div className="sailmap--spacer"></div>
                 <Sailmap />
             </div>
             <div className="ProfileSlider" id="ProfileSlider">
@@ -49,10 +55,10 @@ function Sitecontent(){
                 <Mediacontent 
                     imgSrc={PlayEarn} 
                     imgAlt="Image-3"
-                    title="Play to earn" 
-                    introText="" 
-                    mediaText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
-                    mediaText2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
+                    title="$CAVIAR" 
+                    introText="Sustainable Passive Income" 
+                    mediaText="$CAVIAR is the official ERC-20 staking rewards token with a utility to purchase post-credit space on educational awareness films for advertisement or promotions."
+                    mediaText2="The utility of $CAVIAR makes the rewards ecosystem sustainable, as 75% of the advertisement revenue will be added back to the Uniswap liquidity pool. Each staked NFT will recieve 1 $CAVIAR per hour which means +8700 $CAVIAR profits per year."
                     id="Earn"
                 />
             </div>
@@ -62,8 +68,8 @@ function Sitecontent(){
                     imgAlt="Image-4"
                     title="Team" 
                     introText="" 
-                    mediaText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
-                    mediaText2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMauris duis pellentesque at euismod temporlentesque at euismod tempor"
+                    mediaText="CryptOcean was created by 11 ocean-obsessed, NFT enthusiasts. "
+                    mediaText2="The crew consists of experts from across the ocean, with experience in 3D design, conceptualisation, animation, UX design, blockchain development and marketing, with one details-orientated Aqua Captain, charting the voyage and direction for CryptOcean."
                     id="Team"
                 />
             </div>
@@ -71,6 +77,7 @@ function Sitecontent(){
                 <Artists />
             </div>
             <div className="Faqs--list" id="faqs">
+                <div className="faqs--spacer"></div>
                 <Faqs />
             </div>
         </>

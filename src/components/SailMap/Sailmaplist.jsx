@@ -10,8 +10,8 @@ function Sailmaplist(props){
             </div>
             <div className="listing--data">
                 <ul>
-                    <li>{props.listData}</li>
-                    <li>{props.listData}</li>
+                    <li>{props.listData1}</li>
+                    <li>{props.listData2}</li>
                 </ul>
             </div>
         </li>

@@ -1,5 +1,5 @@
 .accordian--list{
-    margin-top: 2.75rem;
+    margin-top: 1.25rem;
 }
 .accordian--list li .accor-head{
     margin-top: 1.25rem;
@@ -10,8 +10,12 @@
     cursor: pointer;
 }
 .accordian--list li .accor-head p{
-    padding: 1.25rem 4rem 1.25rem 2rem;
+    padding: 1.25rem 4rem 1.25rem 4rem;
     position: relative;
+}
+span.faq-count {
+    position: absolute;
+    left: 1rem;
 }
 .accordian--list li .accor-head p:before{
     content: '';
@@ -19,7 +23,7 @@
     height: 1.5rem;
     position: absolute;
     top: 50%;
-    left: 1rem;
+    left: 2.75rem;
     transform: translateY(-50%);
     background: #B9FAF5;
 }

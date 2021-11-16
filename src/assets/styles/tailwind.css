@@ -129,7 +129,8 @@ div#site__header {
     max-width: 45.0625rem;
 }
 h3.banner--title {
-    @apply text-6xl font-semibold text--color--lightblue;
+    @apply font-semibold text--color--lightblue;
+    font-size: 3.5rem;
     text-shadow: 0px 10px 60px rgba(255, 255, 255, 0.4);
 }
 p.banner--text {
@@ -356,7 +357,7 @@ ul.artist--social--links {
     @apply flex;
 }
 ul.artist--social--links > li a {
-    @apply flex w-7 h-7;
+    @apply flex w-6 h-6;
 }
 ul.artist--social--links > li {
     @apply m-1;
@@ -470,7 +471,8 @@ div#site--footer {
     transition: box-shadow .5s, border .5s;
     overflow: hidden;
     border-radius: 100%;
-    width: 8.125rem;
+    max-width: 6.5rem;
+    width: 100%;
 }
 .artist--list li:hover .artist--img {
     border: 2px solid #ffffff96;
@@ -761,7 +763,7 @@ div#site--footer {
         font-size: 1vw;
     }
     .wrapper{
-        @apply my-32;
+        @apply my-32 min-h-screen;
     }
     .site__navigation ul{
         @apply flex;
@@ -822,7 +824,8 @@ div#site--footer {
         @apply mr-0 ml-16;
     }
     .list--date {
-        @apply pr-10 mr-10 text-center relative;
+        @apply pr-6 mr-10 text-center relative w-full;
+        max-width: 6rem;
     }
     .sailmap--list > ul > li {
         @apply flex px-5;
@@ -863,7 +866,7 @@ div#site--footer {
     }
     .sailmap--top--images {
         position: absolute;
-        top: -6rem;
+        top: 7rem;
         left: 50%;
         z-index: -1;
         width: 57.5625rem;
@@ -899,4 +902,22 @@ div#site--footer {
     html{
         font-size: 1vw;
     }
+}
+.site__connect-buton{
+    @apply hidden;
+}
+div#site__banner__slider{
+    @apply z-0;
+}
+.profile-slider-data ul{
+    @apply list-disc ml-4;
+}
+.profile-slider-data li{
+    @apply mt-4;
+}
+.mintbox--spacer, .about--spacer, .donation--spacer, .earn--spacer, .team--spacer, .faqs--spacer{
+    @apply h-4;
+}
+.sailmap--spacer{
+    @apply h-20;
 }

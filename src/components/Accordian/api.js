@@ -1,50 +1,71 @@
 const AccordionData = [
     {
         id: 1,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-        laborum cupiditate possimus labore, hic temporibus velit dicta earum
-        suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-        voluptatem.`
+        title: 'What is CryptOcean vision and long term plans?',
+        content: `Our vision is to build a complete NFT ecosystem with real use cases for the holders. We've designed the roadmap to incentivize diamond hands with 4 big waves in our sail map: 
+1 - Expanding the CryptOcean ecosystem with premium quality collection launches throughout 2022
+2 - Initiating $CAVIAR ERC-20 token liquidity on Uniswap as the official CryptOcean rewards token
+3 - Staking and passive income for all NFT holders
+3 - Minting Whale NFT launch exclusively for Pre Cryptocean NFT holders`
     },
     {
         id: 2,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-        reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-        quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-        pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-        quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-        Repudiandae, mollitia id reprehenderit a ab odit!`
+        title: 'How can I earn passive income while holding my CryptOcean NFT?',
+        content: `1 - If you hold 1 NFT from each collection you will be entitled to $CAVIAR airdrop once we initiate the liquidity on Uniswap
+2 - Generate lucradive passive income by staking 1 NFT from your CryptOcean portfolio to get hourly $CAVIAR rewards
+3 - If you hold 5 NFTs from CryptOcean collections you will be eligible to mint a Whale NFT
+4 - Holding a CryptOcean NFT is a long-term investment, as our ecosystem is growing with new collections, which increases demand and the value of existing collections`
     },
     {
         id: 3,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-3 Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`
+        title: 'Who are CryptOcean Guardians? ',
+        content: `Guardians are the front-line supporters of the project. Supporters apply to become CryptOcean Guardians and are they chosen based on their social media activity related to this project, as well as certain criteria, such as holding CryptOcean NFTs. `
     },
     {
         id: 4,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-4 Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`
+        title: 'How to become a CryptOcean Guardian?',
+        content: `Apply to become a Guardian here -https://forms.gle/Yuqg1aFsQjYyiPZD7. We will review your application and get back to you, only 300 guardian memberships are available!`
     },
     {
         id: 5,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-5 Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`
+        title: 'What are the advantages of being a CryptOcean Guardian?',
+        content: `"1. Priority access to all minting events
+2. Private giveaways open to Guardians who have submitted their shipping addresses
+3. Double $CAVIAR token airdrops once tokens are launched on Uniswap 2022, compared to single airdrops
+4. Access to a private Guardian discord channel and authority to ban members from discord if 3 guardians have reported 1 account"`
     },
     {
         id: 6,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam.',
-        content: `cont-6 Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`
-    }
+        title: 'Why Ethereum? ',
+        content: `Ethereum is the most stable and secure blockchain, and despite the high gas fees we trust Ethereum. Since ETH2 will launch in 2022 we believe our Play to Earn will have lower gas fees to ensure players will have the best experience. Also Ethereum NFT has powerful tools for the holders, such as rarity and trading analysis.`
+    },
+    {
+        id: 7,
+        title: 'What are the rules for Whale NFTs? ',
+        content: `5 NFTs from your CryptOcean portfolio must be locked for 3 months to be eligible to mint 1 Whale NFT`
+    },
+    {
+        id: 8,
+        title: 'Will there be airdrops?',
+        content: `There will be $CAVIAR airdrops once we initiate the liquidity on Uniswap in 2022. In this event there will be 2 types of airdrop: 
+1 - $CAVIAR token airdrop for holders who own 1 NFT from each CryptOcean collection
+2 - Double $CAVIAR token airdrops for CryptOcean Guardians only`
+    },
+    {
+        id: 9,
+        title: 'When will NFT properties and rarity details be revealed?',
+        content: `NFT details will be revealed 24 hours after the entire collection is sold`
+    },
+    {
+        id: 10,
+        title: 'Is there a royalty fee?',
+        content: `Royalties on Opensea secondary market are charged at 5%`
+    },
+    {
+        id: 11,
+        title: 'Will team reserve any NFTs for marketing?',
+        content: `111 NFTs will be reserved from each collection`
+    },
 ];
 
 export default AccordionData;

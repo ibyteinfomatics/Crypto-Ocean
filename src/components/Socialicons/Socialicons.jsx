@@ -8,17 +8,17 @@ function Socialicons(){
     return(
         <ul>
             <li>
-                <a href="javascript:void(0)">
+                <a href="https://discord.gg/cryptoceanart" target="_blank">
                     <img src={discord} alt="Discord" />
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)">
+                <a href="https://www.instagram.com/cryptoceanart" target="_blank">
                     <img src={insta} alt="Instagram" />
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)">
+                <a href="https://twitter.com/cryptoceanart" target="_blank">
                     <img src={twtr} alt="Twitter" />
                 </a>
             </li>

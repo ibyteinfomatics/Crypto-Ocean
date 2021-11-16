@@ -27,9 +27,6 @@ function App() {
             <div id="site__banner__slider">
                 <Bannerslider />
             </div>
-            {/* <div className="main--banner-image">
-                <img src={mainBanner} alt="main banner" />
-            </div> */}
             <div id="site__content">
                 <Sitecontent />
             </div>

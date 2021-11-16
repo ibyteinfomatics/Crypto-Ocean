@@ -31407,9 +31407,8 @@ div#site__header {
 
 h3.banner--title {
   font-weight: 600;
-  font-size: 3.75rem;
-  line-height: 1;
   color: var(--text--color--lightBlue);
+  font-size: 3.5rem;
   text-shadow: 0px 10px 60px rgba(255, 255, 255, 0.4);
 }
 
@@ -31823,8 +31822,8 @@ ul.artist--social--links {
 ul.artist--social--links > li a {
   display: -webkit-flex;
   display: flex;
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 ul.artist--social--links > li {
@@ -31996,7 +31995,8 @@ div#site--footer {
   transition: box-shadow .5s, border .5s;
   overflow: hidden;
   border-radius: 100%;
-  width: 8.125rem;
+  max-width: 6.5rem;
+  width: 100%;
 }
 
 .artist--list li:hover .artist--img {
@@ -32476,6 +32476,7 @@ div#site--footer {
   .wrapper{
     margin-top: 8rem;
     margin-bottom: 8rem;
+    min-height: 100vh;
   }
 
   .site__navigation ul{
@@ -32587,9 +32588,11 @@ div#site--footer {
 
   .list--date {
     margin-right: 2.5rem;
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
     position: relative;
     text-align: center;
+    width: 100%;
+    max-width: 6rem;
   }
 
   .sailmap--list > ul > li {
@@ -32675,7 +32678,7 @@ div#site--footer {
 
   .sailmap--top--images {
     position: absolute;
-    top: -6rem;
+    top: 7rem;
     left: 50%;
     z-index: -1;
     width: 57.5625rem;
@@ -32733,6 +32736,31 @@ div#site--footer {
   html{
     font-size: 1vw;
   }
+}
+
+.site__connect-buton{
+  display: none;
+}
+
+div#site__banner__slider{
+  z-index: 0;
+}
+
+.profile-slider-data ul{
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.profile-slider-data li{
+  margin-top: 1rem;
+}
+
+.mintbox--spacer, .about--spacer, .donation--spacer, .earn--spacer, .team--spacer, .faqs--spacer{
+  height: 1rem;
+}
+
+.sailmap--spacer{
+  height: 5rem;
 }
 
 @media (min-width: 640px) {

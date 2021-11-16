@@ -4,8 +4,8 @@ import $ from 'jquery';
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
 
-const iconship = "./assets/images/icon-ship.png";
-const lightHouse = "./assets/images/light-house.png";
+const iconship = "./assets/images/icon-ship.gif";
+const lightHouse = "./assets/images/light-house.gif";
 const iconwaves = "./assets/images/waves.png";
 
 
@@ -54,7 +54,7 @@ function Sailmap(){
         <div className="section--wrapper wrapper sailmap--wrapper" id="scrollBar">
             <div className="box-content text-center">
                 <h2 className="title">Sail Map</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus venenatis at id urna. Mauris duis pellentesque at euismod temporMa</p>
+                <p>This roadmap charts our progress and route for CryptOcean, which may evolve, as we aim to give you the ultimate NFT journey</p>
             </div>
             <div className="sailmap--list">
                 <ul>
@@ -63,8 +63,9 @@ function Sailmap(){
                         fadeDur= "1000"
                         efftrept="true"
                         listYear = "2021"
-                        listMonth = "Jan"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listMonth = "AUG"
+                        listData1 = "Conceptualization & Planning - Creating a strong concept with focus on artwork quality and project Sail Map"
+                        listData2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -72,7 +73,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Feb"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -80,7 +82,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Mar"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -88,7 +91,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Apr"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist  
                         fadeAni= "slide-left"
@@ -96,7 +100,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "May"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -104,7 +109,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Jun"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist  
                         fadeAni= "slide-left"
@@ -112,7 +118,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "July"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -120,7 +127,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Augs"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -128,7 +136,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Sept"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -136,7 +145,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Oct"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist  
                         fadeAni= "slide-left"
@@ -144,7 +154,8 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Nov"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                     <Sailmaplist 
                         fadeAni= "slide-left"
@@ -152,16 +163,17 @@ function Sailmap(){
                         efftrept="true"
                         listYear = "2021"
                         listMonth = "Dec"
-                        listData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData1 = "1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
+                        listData2 = "2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam."
                     />
                 </ul>
             </div>
         </div>
         </div>
         
-        <div className="btn discord--button" data-aos="fade-down" data-aos-duration="1000">
+        {/* <div className="btn discord--button" data-aos="fade-down" data-aos-duration="1000">
             <a href="javascript:void(0)">Join Discord</a>
-        </div>
+        </div> */}
         </>
     )
 }
