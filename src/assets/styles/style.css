@@ -32474,9 +32474,9 @@ div#site--footer {
   }
 
   .wrapper{
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-    min-height: 100vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
   }
 
   .site__navigation ul{
@@ -32678,7 +32678,7 @@ div#site--footer {
 
   .sailmap--top--images {
     position: absolute;
-    top: 7rem;
+    top: 4rem;
     left: 50%;
     z-index: -1;
     width: 57.5625rem;

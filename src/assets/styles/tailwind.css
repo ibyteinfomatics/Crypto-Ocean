@@ -763,7 +763,7 @@ div#site--footer {
         font-size: 1vw;
     }
     .wrapper{
-        @apply my-32 min-h-screen;
+        @apply mt-20 my-16;
     }
     .site__navigation ul{
         @apply flex;
@@ -866,7 +866,7 @@ div#site--footer {
     }
     .sailmap--top--images {
         position: absolute;
-        top: 7rem;
+        top: 4rem;
         left: 50%;
         z-index: -1;
         width: 57.5625rem;

@@ -20,7 +20,8 @@ function Sitecontent(){
             {/* <div id="mintbox" className="mintbox">
                 <Mintbox />
             </div> */}
-            <div className="media--section section--alignment-left" id="about">                
+            <div className="media--section section--alignment-left" id="about">  
+                <div className="about--spacer"></div>
                 <Mediacontent 
                     imgSrc={Story} 
                     imgAlt="Image-1"
@@ -32,6 +33,7 @@ function Sitecontent(){
                 />
             </div>
             <div className="media--section section--alignment-right" id="donation">
+                <div className="donation--spacer"></div>
                 <Mediacontent 
                     imgSrc={Donation} 
                     imgAlt="Image-2"
@@ -52,6 +54,7 @@ function Sitecontent(){
                 </div>
             </div>
             <div className="media--section section--alignment-right" id="playearn">
+                <div className="earn--spacer"></div>
                 <Mediacontent 
                     imgSrc={PlayEarn} 
                     imgAlt="Image-3"
@@ -63,6 +66,7 @@ function Sitecontent(){
                 />
             </div>
             <div className="media--section section--alignment-left" id="team">
+                <div className="team--spacer"></div>
                 <Mediacontent 
                     imgSrc={Team} 
                     imgAlt="Image-4"
