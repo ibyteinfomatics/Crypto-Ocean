@@ -17,10 +17,13 @@ const menuNav  =
             <a href="#sailmap">Sail Map</a>
         </li>
         <li>
-            <a href="#team">Team</a>
+            <a href="#ProfileSlider">Collection</a>
         </li>
         <li>
             <a href="#playearn">$caviar</a>
+        </li>
+        <li>
+            <a href="#team">Team</a>
         </li>
         <li>
             <a href="#faqs">FAQ</a>

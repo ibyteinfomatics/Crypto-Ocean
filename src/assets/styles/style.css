@@ -32465,7 +32465,7 @@ div#site--footer {
 
   div#site__banner__slider {
     margin-top: -14rem;
-    margin-bottom: 10rem;
+    margin-bottom: 0rem;
     overflow: hidden;
     position: relative;
     padding-bottom: 5rem;
@@ -32759,7 +32759,7 @@ div#site__banner__slider{
   margin-top: 1rem;
 }
 
-.mintbox--spacer, .about--spacer, .donation--spacer, .earn--spacer, .team--spacer, .faqs--spacer{
+.mintbox--spacer, .about--spacer, .donation--spacer, .earn--spacer, .team--spacer, .faqs--spacer, .profileslider--spacer{
   height: 1rem;
 }
 

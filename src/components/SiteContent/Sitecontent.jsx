@@ -49,6 +49,7 @@ function Sitecontent(){
                 <Sailmap />
             </div>
             <div className="ProfileSlider" id="ProfileSlider">
+                <div className="profileslider--spacer"></div>
                 <div className="wrapper profile--wrapper">
                     <ProfileStyleData />
                 </div>

@@ -105,7 +105,7 @@ div#site__banner {
 
 @media screen and (max-width: 47.9875em){
   div#site__banner__slider{
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 71.9875em){
