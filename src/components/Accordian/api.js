@@ -2,19 +2,24 @@ const AccordionData = [
     {
         id: 1,
         title: 'What is CryptOcean vision and long term plans?',
-        content: `Our vision is to build a complete NFT ecosystem with real use cases for the holders. We've designed the roadmap to incentivize diamond hands with 4 big waves in our sail map: 
-1 - Expanding the CryptOcean ecosystem with premium quality collection launches throughout 2022
-2 - Initiating $CAVIAR ERC-20 token liquidity on Uniswap as the official CryptOcean rewards token
-3 - Staking and passive income for all NFT holders
-3 - Minting Whale NFT launch exclusively for Pre Cryptocean NFT holders`
+        content: "Our vision is to build a complete NFT ecosystem with real use cases for the holders. We've designed the roadmap to incentivize diamond hands with 4 big waves in our sail map: ",
+        contentList1: "Expanding the CryptOcean ecosystem with premium quality collection launches throughout 2022",
+        contentList2: "Initiating $CAVIAR ERC-20 token liquidity on Uniswap as the official CryptOcean rewards token",
+        contentList3: "Staking and passive income for all NFT holders",
+        contentList4: "Minting Whale NFT launch exclusively for Pre Cryptocean NFT holders",
+        listingData: ["Expanding the CryptOcean ecosystem with premium quality collection launches throughout 2022",
+        "Initiating $CAVIAR ERC-20 token liquidity on Uniswap as the official CryptOcean rewards token",
+        "Staking and passive income for all NFT holders",
+        "Minting Whale NFT launch exclusively for Pre Cryptocean NFT holders"]
     },
     {
         id: 2,
         title: 'How can I earn passive income while holding my CryptOcean NFT?',
-        content: `1 - If you hold 1 NFT from each collection you will be entitled to $CAVIAR airdrop once we initiate the liquidity on Uniswap
-2 - Generate lucradive passive income by staking 1 NFT from your CryptOcean portfolio to get hourly $CAVIAR rewards
-3 - If you hold 5 NFTs from CryptOcean collections you will be eligible to mint a Whale NFT
-4 - Holding a CryptOcean NFT is a long-term investment, as our ecosystem is growing with new collections, which increases demand and the value of existing collections`
+        content: "",
+        listingData: ['If you hold 1 NFT from each collection you will be entitled to $CAVIAR airdrop once we initiate the liquidity on Uniswap',
+        'Generate lucradive passive income by staking 1 NFT from your CryptOcean portfolio to get hourly $CAVIAR rewards',
+        'If you hold 5 NFTs from CryptOcean collections you will be eligible to mint a Whale NFT',
+        'Holding a CryptOcean NFT is a long-term investment, as our ecosystem is growing with new collections, which increases demand and the value of existing collections']
     },
     {
         id: 3,
@@ -29,10 +34,10 @@ const AccordionData = [
     {
         id: 5,
         title: 'What are the advantages of being a CryptOcean Guardian?',
-        content: `"1. Priority access to all minting events
-2. Private giveaways open to Guardians who have submitted their shipping addresses
-3. Double $CAVIAR token airdrops once tokens are launched on Uniswap 2022, compared to single airdrops
-4. Access to a private Guardian discord channel and authority to ban members from discord if 3 guardians have reported 1 account"`
+        listingData: ["Priority access to all minting events",
+        "Private giveaways open to Guardians who have submitted their shipping addresses",
+        "Double $CAVIAR token airdrops once tokens are launched on Uniswap 2022, compared to single airdrops",
+        "Access to a private Guardian discord channel and authority to ban members from discord if 3 guardians have reported 1 account"]
     },
     {
         id: 6,
@@ -47,9 +52,9 @@ const AccordionData = [
     {
         id: 8,
         title: 'Will there be airdrops?',
-        content: `There will be $CAVIAR airdrops once we initiate the liquidity on Uniswap in 2022. In this event there will be 2 types of airdrop: 
-1 - $CAVIAR token airdrop for holders who own 1 NFT from each CryptOcean collection
-2 - Double $CAVIAR token airdrops for CryptOcean Guardians only`
+        content: `There will be $CAVIAR airdrops once we initiate the liquidity on Uniswap in 2022. In this event there will be 2 types of airdrop:`,
+        listingData: ["$CAVIAR token airdrop for holders who own 1 NFT from each CryptOcean collection",
+        "Double $CAVIAR token airdrops for CryptOcean Guardians only"]
     },
     {
         id: 9,

@@ -10,20 +10,20 @@
     cursor: pointer;
 }
 .accordian--list li .accor-head p{
-    padding: 1.25rem 4rem 1.25rem 4rem;
+    padding: 1.25rem 4rem 1.25rem 2rem;
     position: relative;
 }
-span.faq-count {
+/* span.faq-count {
     position: absolute;
     left: 1rem;
-}
+} */
 .accordian--list li .accor-head p:before{
     content: '';
     width: 0.125rem;
     height: 1.5rem;
     position: absolute;
     top: 50%;
-    left: 2.75rem;
+    left: 1rem;
     transform: translateY(-50%);
     background: #B9FAF5;
 }
@@ -61,4 +61,12 @@ span.faq-count {
     opacity: 1;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+}
+.accor-data ol {
+    list-style: decimal;
+    margin-left: 1em;
+}
+
+.accor-data ol li {
+    margin-top: 1rem;
 }

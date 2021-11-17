@@ -179,7 +179,7 @@ p.banner--text {
 .media--text{
     @apply mt-4; 
 }
-.media--text .media--highlight{
+.media--highlight{
     @apply text--color--lightblue;
 }
 .media--text p:not(:first-child){
@@ -345,7 +345,7 @@ span.list--month {
 }
 .artist--list > ul > li {
     @apply flex mt-4 items-center w-full p-4;
-    max-width: 25%;
+    max-width: 33.33333%;
 }
 p.artist--name {
     @apply text-xl font-black;

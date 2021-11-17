@@ -31491,7 +31491,7 @@ p.banner--text {
   margin-top: 1rem;
 }
 
-.media--text .media--highlight{
+.media--highlight{
   color: var(--text--color--lightBlue);
 }
 
@@ -31799,7 +31799,7 @@ span.list--month {
   margin-top: 1rem;
   padding: 1rem;
   width: 100%;
-  max-width: 25%;
+  max-width: 33.33333%;
 }
 
 p.artist--name {

@@ -18,9 +18,9 @@ function Artists(){
                             artistName = "Serhat Yucekaya"
                             link = "javascript:void(0)"
                             twtrLink = "https://twitter.com/YucekayaSerhat"
-                            insLink = "javascript:void(0)"
-                            artLink = "javascript:void(0)"
-                            linkdineLink = "javascript:void(0)"
+                            insLink = ""
+                            artLink = ""
+                            linkdineLink = ""
                         />
                         <ArtistsList 
                             imgSrc = {artist2}
@@ -28,26 +28,26 @@ function Artists(){
                             link = "javascript:void(0)"
                             insLink = "https://www.instagram.com/dasha_eva_art/"
                             artLink = "https://www.artstation.com/dasha_eva"
-                            twtrLink = "javascript:void(0)"
-                            linkdineLink = "javascript:void(0)"
+                            twtrLink = ""
+                            linkdineLink = ""
                         />
                         <ArtistsList 
                             imgSrc = {artist3}
                             artistName = "Diana"
                             link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
+                            insLink = ""
                             artLink = "https://www.artstation.com/diomiji"
-                            twtrLink = "javascript:void(0)"
-                            linkdineLink = "javascript:void(0)"
+                            twtrLink = ""
+                            linkdineLink = ""
                         />
                         <ArtistsList 
                             imgSrc = {artist4}
                             artistName = "Amir Hossein"
                             link = "javascript:void(0)"
-                            insLink = "javascript:void(0)"
+                            insLink = ""
                             artLink = "https://www.artstation.com/elvin0513"
-                            twtrLink = "javascript:void(0)"
-                            linkdineLink = "javascript:void(0)"
+                            twtrLink = ""
+                            linkdineLink = ""
                         />
                     </ul>
                 </div>

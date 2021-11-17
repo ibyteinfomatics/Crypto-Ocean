@@ -24,7 +24,7 @@ function ProfileStyleData(){
             </div>
             <div className="profile-slider-data profilin" data-aos="fade-up">
                 <h3 className="title">Mermaid Collection</h3>
-                <p>11,111 mermaids are living in CryptOcean, all created in 4K resolution, with individual personalities and traits.</p>
+                <p className="media--highlight">11,111 mermaids are living in CryptOcean, all created in 4K resolution, with individual personalities and traits.</p>
                 <ul>
                     <li>The original sisters gang is made up of 6,000 mermaids who were the first to enter CryptOcean and form the underwater metaverse.</li>
                     <li>2,111 mermaids have been created by the ocean gods with neon light and luminous skin, making them the Queens of CryptOcean.</li>

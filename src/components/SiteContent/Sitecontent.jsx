@@ -71,9 +71,8 @@ function Sitecontent(){
                     imgSrc={Team} 
                     imgAlt="Image-4"
                     title="Team" 
-                    introText="" 
-                    mediaText="CryptOcean was created by 11 ocean-obsessed, NFT enthusiasts. "
-                    mediaText2="The crew consists of experts from across the ocean, with experience in 3D design, conceptualisation, animation, UX design, blockchain development and marketing, with one details-orientated Aqua Captain, charting the voyage and direction for CryptOcean."
+                    introText="CryptOcean was created by 11 ocean-obsessed, NFT enthusiasts." 
+                    mediaText="The crew consists of experts from across the ocean, with experience in 3D design, conceptualisation, animation, UX design, blockchain development and marketing, with one details-orientated Aqua Captain, charting the voyage and direction for CryptOcean."
                     id="Team"
                 />
             </div>
