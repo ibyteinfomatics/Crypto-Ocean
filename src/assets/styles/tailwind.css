@@ -398,6 +398,9 @@ div#site--footer {
     top: inherit;
     left: inherit;
 }
+.footer--wrapper .site--social--icons ul li a{
+    width: 2.25rem;
+}
 .footer--bottom p{
     @apply p-5 text-center text--color--lightblue;
 }

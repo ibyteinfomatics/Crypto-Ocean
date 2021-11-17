@@ -37,7 +37,7 @@ div#site__banner {
   height: 18rem;
   background: url(images/wave-1.png);
   background-position: bottom;
-  background-repeat: no-repeat;
+  background-repeat-y: no-repeat !important;
   /* background-size: 100%; */
   animation: animate 6s linear infinite;
   animation-delay: calc(var(--i) * 0.25s);

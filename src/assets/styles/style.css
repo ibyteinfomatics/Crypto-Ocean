@@ -31886,6 +31886,10 @@ div#site--footer {
   left: inherit;
 }
 
+.footer--wrapper .site--social--icons ul li a{
+  width: 2.25rem;
+}
+
 .footer--bottom p{
   padding: 1.25rem;
   text-align: center;
