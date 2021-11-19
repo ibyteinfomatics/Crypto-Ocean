@@ -22,22 +22,22 @@ function ArtistsList(props){
                         </li>
                     }
                     {props.artLink &&
-                        <li className="drive--link" target="_blank" title="Artstation">
-                            <a href={props.artLink}>
+                        <li className="drive--link">
+                            <a href={props.artLink} target="_blank" title="Artstation">
                                 <img src={artImg} alt="Artstation" />
                             </a>
                         </li>
                     }
                     {props.twtrLink &&
-                        <li className="twtr--link" target="_blank" title="Twitter">
-                            <a href={props.twtrLink}>
+                        <li className="twtr--link">
+                            <a href={props.twtrLink} target="_blank" title="Twitter">
                                 <img src={twtrImg} alt="Twitter" />
                             </a>
                         </li>
                     }
                     {props.linkdineLink &&
-                        <li className="linkdine--link" target="_blank" title="Linkdine">
-                            <a href={props.linkdineLink}>
+                        <li className="linkdine--link">
+                            <a href={props.linkdineLink} target="_blank" title="Linkdine">
                                 <img src={linkdineImg} alt="Twitter" />
                             </a>
                         </li>
