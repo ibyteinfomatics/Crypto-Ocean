@@ -7,7 +7,7 @@ import ProfileStyleData from "../StyleNProfile/StyleProfile";
 
 const Story ="./assets/images/story_img.png";
 const Donation ="./assets/images/donation_img.png";
-const PlayEarn ="./assets/images/playearn_img.png";
+const PlayEarn ="./assets/images/playearn_img.gif";
 const Team ="./assets/images/team_img.gif";
 /*
 <div id="mintbox" className="mintbox">

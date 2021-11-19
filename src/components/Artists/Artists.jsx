@@ -17,9 +17,9 @@ function Artists(){
                             imgSrc = {artist1}
                             artistName = "Serhat Yucekaya"
                             link = "javascript:void(0)"
-                            twtrLink = "https://twitter.com/YucekayaSerhat"
-                            insLink = ""
-                            artLink = ""
+                            twtrLink = "https://twitter.com/YucekayaSerhat/"
+                            insLink = "https://www.instagram.com/jackasssero/"
+                            artLink = "https://www.artstation.com/serhatyucekaya"
                             linkdineLink = ""
                         />
                         <ArtistsList 
@@ -33,19 +33,19 @@ function Artists(){
                         />
                         <ArtistsList 
                             imgSrc = {artist3}
-                            artistName = "Diana"
+                            artistName = "Amir Hossein"
                             link = "javascript:void(0)"
-                            insLink = ""
-                            artLink = "https://www.artstation.com/diomiji"
-                            twtrLink = ""
+                            insLink = "https://www.instagram.com/amir_art0513/"
+                            artLink = "https://www.artstation.com/elvin0513"
+                            twtrLink = "https://twitter.com/Amirdashti52"
                             linkdineLink = ""
                         />
                         <ArtistsList 
                             imgSrc = {artist4}
-                            artistName = "Amir Hossein"
+                            artistName = "Diana Ordabayeva"
                             link = "javascript:void(0)"
-                            insLink = ""
-                            artLink = "https://www.artstation.com/elvin0513"
+                            insLink = "https://www.instagram.com/di_ordabayeva/"
+                            artLink = "https://www.artstation.com/diomiji"
                             twtrLink = ""
                             linkdineLink = ""
                         />

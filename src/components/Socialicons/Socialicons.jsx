@@ -24,7 +24,7 @@ function Socialicons(){
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)">
+                <a href="https://www.youtube.com/channel/cryptoceanart">
                     <img src={ytIcon} alt="Youtube Icon" />
                 </a>
             </li>

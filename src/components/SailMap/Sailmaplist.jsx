@@ -2,7 +2,6 @@
 
 function Sailmaplist(props){
     return(
-        // <li data-aos={props.fadeAni} data-aos-duration={props.fadedur} data-aos-once={props.efftrept}>
         <li>
             <div className="list--date">
                 <span className="list--year">{props.listYear}</span>
@@ -10,8 +9,12 @@ function Sailmaplist(props){
             </div>
             <div className="listing--data">
                 <ul>
+                {props.listData1 &&
                     <li>{props.listData1}</li>
+                }
+                {props.listData2 &&
                     <li>{props.listData2}</li>
+                }
                 </ul>
             </div>
         </li>

@@ -13,10 +13,6 @@
     padding: 1.25rem 4rem 1.25rem 2rem;
     position: relative;
 }
-/* span.faq-count {
-    position: absolute;
-    left: 1rem;
-} */
 .accordian--list li .accor-head p:before{
     content: '';
     width: 0.125rem;
@@ -56,6 +52,9 @@
     overflow: hidden;
     transition: all .5s ease;
 }
+.accor-data p span{
+    font-weight: 600;
+}
 .accordian--list .active--list .accor-data{
     height: fit-content;
     opacity: 1;
@@ -66,7 +65,6 @@
     list-style: decimal;
     margin-left: 1em;
 }
-
 .accor-data ol li {
     margin-top: 1rem;
 }

@@ -26,16 +26,10 @@ const AccordianList = ({idx, id, title, content}) => {
                             {curElem.title}</p>
                         </div>
                         <div className="accor-data">
-                        <p>{curElem.content}</p>
+                        <p>{curElem.listingData ? <span>{curElem.content}</span> : curElem.content}</p>
                         <ol>
                             {curElem.listingData && curElem.listingData.map((listing) => <li>{listing}</li>)}
                         </ol>
-                        {/* <ol>
-                            <li>{curElem.contentList1}</li>
-                            <li>{curElem.contentList2}</li>
-                            <li>{curElem.contentList3}</li>
-                            <li>{curElem.contentList4}</li>
-                        </ol> */}
                         </div>
                     </li>
                 })
