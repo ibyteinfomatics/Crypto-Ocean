@@ -1,0 +1,70 @@
+.accordian--list{
+    margin-top: 1.25rem;
+}
+.accordian--list li .accor-head{
+    margin-top: 1.25rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: 2px solid #B9FAF5;
+    cursor: pointer;
+}
+.accordian--list li .accor-head p{
+    padding: 1.25rem 4rem 1.25rem 2rem;
+    position: relative;
+}
+.accordian--list li .accor-head p:before{
+    content: '';
+    width: 0.125rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    background: #B9FAF5;
+}
+.accordian--list li .accor-head p:after{
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 38%;
+    border: solid #B9FAF5;
+    border-width: 0.125rem 0.125rem 0 0;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+.accordian--list li .accor-head p.active:after{
+    transform: rotate(-45deg);
+    top: 50%;
+}
+.accordian--list .accor-data {
+    margin-top: 0.25rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0.75rem;
+    color: #222;
+    font-weight: 500;
+    padding-right: 3.5rem;
+    padding-left: 2rem;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.accor-data p span{
+    font-weight: 600;
+}
+.accordian--list .active--list .accor-data{
+    height: fit-content;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.accor-data ol {
+    list-style: decimal;
+    margin-left: 1em;
+}
+.accor-data ol li {
+    margin-top: 1rem;
+}

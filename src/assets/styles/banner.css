@@ -1,0 +1,137 @@
+/* Banner Slick Slider Styling */
+div#site__banner__slider .slick-slider {
+  max-width: 72rem;
+  margin: auto;
+  z-index: 999;
+}
+
+div#site__banner__slider .slick-slider .slick-list {
+  max-width: 35rem;
+  margin-left: auto;
+}
+
+/* Banner styling */
+div#site__banner {
+  margin-bottom: 3rem;
+}
+.banner-slider-images {
+  position: absolute;
+  top: -6rem;
+  right: 5rem;
+  width: 28rem;
+}
+.slick-slide img{
+  width: 100%;
+}
+.banner--waves.waves-top.waves-top-animate {
+  position: absolute;
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+}
+.wave{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 18rem;
+  background: url(images/wave-1.png);
+  background-position: bottom;
+  background-repeat-y: no-repeat !important;
+  /* background-size: 100%; */
+  animation: animate 6s linear infinite;
+  animation-delay: calc(var(--i) * 0.25s);
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+}
+.wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  background: url(images/wave-4-1.png);
+  background-position-x: 400px;
+  background-size: 100% 98%;
+  /*animation-delay: 1s;*/
+  bottom: -9.5%;
+}
+.wave#wave2{
+  z-index: 999;
+  opacity: 1;
+  background: url(images/wave-3-1.png);
+  background-position-x: 300px;
+  background-size: 100% 98%;
+  bottom: 0;
+  /*animation-delay: 3s;*/
+}
+.wave#wave3{
+  z-index: 998;
+  opacity: 1;
+  background: url(images/wave-2-1.png);
+  background-position-x: 200px;
+  background-size: 100% 98%;
+  /*animation-delay: 5s;*/
+  bottom: 13%;
+}
+.wave#wave4{
+  z-index: 997;
+  opacity: 1;
+  background: url(images/wave-1-1.png);
+  background-position-x: 100px;
+  background-size: 100% 120%;
+  /*animation-delay: 7s;*/
+  bottom: 25%;
+}
+.wave-move{
+  animation: wave-animate 1s linear infinite;
+  animation-delay: calc(1 * 0.25s);
+}
+@keyframes wave-animate {
+  0%,100%{
+    transform: translateX(0rem);
+  }
+  50%{
+    transform: translateX(1rem);
+    left: -1rem;
+  }
+}
+
+@media screen and (max-width: 47.9875em){
+  div#site__banner__slider{
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 71.9875em){
+  div#site__banner__slider{
+    position: relative;
+  }
+  .banner--waves.waves-top {
+    position: absolute;
+    height: 25rem;
+    width: 100%;
+    bottom: 0;
+  }
+  .wave#wave1{
+    background: url(images/wave-4-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave2{
+    background: url(images/wave-3-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave3{
+    background: url(images/wave-2-1.png);
+    background-size: auto 100%;
+  }
+  .wave#wave4{
+    background: url(images/wave-1-1.png);
+    background-size: auto 120%;
+  }
+}

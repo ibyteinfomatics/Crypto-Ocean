@@ -1,0 +1,32 @@
+.react-3d-carousel .slider-container .slider-content .slider-single.preactive,
+.react-3d-carousel .slider-container .slider-content .slider-single.proactive{
+    max-width: 18rem;
+    /* margin-top: -1.5rem; */
+}
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+    width: 100%;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.proactive{
+    margin-left: 43%;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.preactive{
+    margin-left: -4rem;
+}
+.ProfileSlider .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content{
+    box-shadow: none;
+}
+.react-3d-carousel .slider-container .slider-right div, 
+.react-3d-carousel .slider-container .slider-left div{
+    display: none;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.active .slider-single-content img{
+    transform: scale(1.25);
+}
+/* .react-3d-carousel .slider-container .slider-right div, 
+.react-3d-carousel .slider-container .slider-left div {
+    border-radius: 100%;
+    border-color: #b9faf5;
+    color: #b9faf5;
+    padding: 0.3125rem 0.625rem;
+    margin-top: 0;
+} */
