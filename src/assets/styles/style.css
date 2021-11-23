@@ -31684,6 +31684,11 @@ p.banner--text {
   margin-top: 1.25rem;
 }
 
+.sailmap--list .listing--data{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .sailmap--list > ul > li {
   border-radius: 0.75rem;
   border-style: solid;
@@ -31726,6 +31731,10 @@ span.list--month {
   list-style: disc;
   list-style-position: outside;
   margin-left: 1.25rem;
+}
+
+.listing--data ul li {
+  font-size: 0.950rem;
 }
 
 .discord--button {
@@ -32101,6 +32110,7 @@ div#site--footer {
   .icon--ship{
     left: -2rem;
     margin-left: -1rem;
+    top: -3rem;
   }
 
   .light-house{
@@ -32189,9 +32199,10 @@ div#site--footer {
 
   .wrapper.box--wrapper.test--wrap{
     border: none;
-    margin-top: 3rem;
+    margin-top: 0;
     margin-bottom: 2rem;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .wrapper.sailmap--wrapper{

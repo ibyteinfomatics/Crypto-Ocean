@@ -285,6 +285,9 @@ p.banner--text {
 .sailmap--list {
     @apply mt-5;
 }
+.sailmap--list .listing--data{
+    @apply text-sm;
+}
 .sailmap--list > ul > li {
     @apply border-solid border-lightblue mb-5 py-5 px-10 rounded-xl bg--grey delay-300 cursor-pointer; 
     border-width: 0.125rem;
@@ -536,6 +539,7 @@ div#site--footer {
     .icon--ship{
         left: -2rem;
         margin-left: -1rem;
+        top: -3rem;
     }
     .light-house{
         top: -4rem;
@@ -593,9 +597,10 @@ div#site--footer {
     }
     .wrapper.box--wrapper.test--wrap{
         border: none;
-        margin-top: 3rem;
+        margin-top: 0;
         margin-bottom: 2rem;
         padding-bottom: 0;
+        padding-top: 0;
     }
     .wrapper.sailmap--wrapper{
         @apply p-0 border-0 bg-transparent mt-0;
