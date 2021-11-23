@@ -55,6 +55,9 @@
 .accor-data p span{
     font-weight: 600;
 }
+.accor-data p a {
+    Font-weight: bold;	
+}
 .accordian--list .active--list .accor-data{
     height: fit-content;
     opacity: 1;

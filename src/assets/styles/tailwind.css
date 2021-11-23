@@ -309,6 +309,9 @@ span.list--month {
     list-style-position: outside;
     @apply ml-5;
 }
+.listing--data ul li {
+    font-size: 0.950rem;
+}
 .discord--button {
     @apply text-center mt-12;
 }

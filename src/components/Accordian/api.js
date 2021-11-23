@@ -25,7 +25,7 @@ const AccordionData = [
     {
         id: 4,
         title: 'How to become a CryptOcean Guardian?',
-        content: `Apply to become a Guardian here -https://forms.gle/Yuqg1aFsQjYyiPZD7. We will review your application and get back to you, only 300 guardian memberships are available!`
+        content: 'Apply to become a Guardian <a href="https://forms.gle/Yuqg1aFsQjYyiPZD7" target="_blank">here</a>. We will review your application and get back to you, only 300 guardian memberships are available!'
     },
     {
         id: 5,

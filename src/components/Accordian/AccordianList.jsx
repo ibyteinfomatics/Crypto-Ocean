@@ -26,7 +26,7 @@ const AccordianList = ({idx, id, title, content}) => {
                             {curElem.title}</p>
                         </div>
                         <div className="accor-data">
-                        <p>{curElem.listingData ? <span>{curElem.content}</span> : curElem.content}</p>
+                        <p dangerouslySetInnerHTML={{__html: curElem.listingData && curElem.content ? `<span>${curElem.content}</span>` : curElem.content}}></p>
                         <ol>
                             {curElem.listingData && curElem.listingData.map((listing) => <li>{listing}</li>)}
                         </ol>
