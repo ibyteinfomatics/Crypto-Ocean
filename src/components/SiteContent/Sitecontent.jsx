@@ -17,9 +17,9 @@ const Team ="./assets/images/team_img.gif";
 function Sitecontent(){
     return(
         <>
-            {/* <div id="mintbox" className="mintbox">
+            <div id="mintbox" className="mintbox">
                 <Mintbox />
-            </div> */}
+            </div>
             <div className="media--section section--alignment-left" id="about">  
                 <div className="about--spacer"></div>
                 <Mediacontent 

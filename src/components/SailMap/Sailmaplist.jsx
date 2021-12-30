@@ -10,10 +10,10 @@ function Sailmaplist(props){
             <div className="listing--data">
                 <ul>
                 {props.listData1 &&
-                    <li>{props.listData1}</li>
+                    <li dangerouslySetInnerHTML={{ __html: props.listData1 }}></li>
                 }
                 {props.listData2 &&
-                    <li>{props.listData2}</li>
+                    <li dangerouslySetInnerHTML={{ __html: props.listData2 }}></li>
                 }
                 </ul>
             </div>
